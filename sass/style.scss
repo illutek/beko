@@ -1,0 +1,119 @@
+//variabele
+$blue: #0173b9;
+$lightblue: #87d1fe;
+$midleblue: #22aafd;
+$black: #0e1d25;
+
+body {
+  margin: 0;
+  color: #ffffff;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.9em;
+}
+
+//navigation
+.navbar-default {
+  background: $blue;
+  border-color: $midleblue;
+  .navbar-nav > li > a {
+    color: #ffffff;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+//header region
+header {
+  min-height: 250px;
+  background: $black;
+  margin-top: 50px;
+  .logo {
+    margin-top: 35px;
+  }
+  .slogans {
+    margin-top: 60px;
+    line-height: 1.2em;
+    padding: 0 40px 0;
+  }
+  .certification {
+    padding: 40px 0 0;
+  }
+}
+
+//subdivision
+.subdivision {
+  min-height: 350px;
+  margin-top: 70px;
+  padding: 35px 0;
+  //html misschien aanpassen
+  img {
+    float: left;
+    margin-right: 10px;
+  }
+}
+.blue_background {
+  background: $blue;
+}
+.black_background {
+  background: $black;
+}
+
+//sidebar
+.sticky {
+  position: absolute;
+  min-height: 500px;
+  background: $blue;
+  border: solid 1px #ffffff;
+  margin-top: -50px;
+  &.stick {
+    top: 120px;
+    position: fixed;
+  }
+  .contactgegevens {
+    margin-top: 35px;
+    text-align: center;
+  }
+}
+
+/*
+*To top
+========================================*/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(34, 170 ,253, 0.8) url("../images/cd-top-arrow.svg") no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  &.cd-is-visible, &.cd-fade-out, .no-touch &:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+  }
+  &.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+  }
+  &.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+  }
+  .no-touch &:hover {
+    background-color: #e86256;
+    opacity: 1;
+  }
+}
