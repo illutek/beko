@@ -6,13 +6,16 @@
     <title>BEKO</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.smooth-scroll.js"></script>
+    <!-- <script src="../js/jquery.smooth-scroll.js"></script> -->
+    <script src="../js/scroll-data_id.js"></script>
     <script src="../js/sticky.js"></script>
     <script src="../js/to_top.js"></script>
-    <script src="../js/collapse.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/collapse.nav.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -33,13 +36,26 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav with-indicator">
-                <li class="nav-item"><a href="#home"><i class="fa fa-home"></i>Home</a></li>
-                <li class="nav-item"><a href="#beko">BEKO</a></li>
-                <li class="nav-item"><a href="#schrijnwerkerij">Schrijnwerkerij & interieurbouw</a></li>
-                <li class="nav-item"><a href="#industrie">Industrieprojecten</a></li>
-                <li class="nav-item"><a href="#koeltorens">Koeltorens</a></li>
-                <li class="nav-item"><a href="#realisaties">Realisaties</a></li>
-                <li class="contact-mobile-display"><a href="#contact-mobile">Contact</a></li>
+                <li class="nav-item">
+                    <a href="#" data-id="home" class="scroll-link"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-id="beko" class="scroll-link">BEKO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-id="schrijnwerkerij" class="scroll-link">Schrijnwerkerij & interieurbouw</a></li>
+                <li class="nav-item">
+                    <a href="#" data-id="industrie" class="scroll-link">Industrieprojecten</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-id="koeltorens" class="scroll-link">Koeltorens</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-id="realisaties" class="scroll-link">Realisaties</a>
+                </li>
+                <li class="contact-mobile-display">
+                    <a href="#" data-id="contact-mobile" class="scroll-link">Contact</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -59,12 +75,10 @@
                 </p>
             </div>
             <div class="col-md-4 certification">
-                <img src="../images/LRQA-2010-vca-petrochemie_white.png" height="100" width="">
-                <img src="../images/Bureau-Veritas-Certificaten-VCA-400x186.png" height="70" width="">
+                <img src="../images/LRQA-2010-vca-petrochemie_white.png" height="100">
+                <img src="../images/Bureau-Veritas-Certificaten-VCA-400x186.png" height="70">
             </div>
         </div>
-
-
     </div>
     <!-- end row -->
     </div>
@@ -77,15 +91,22 @@
             <h2>Contact</h2>
 
             <form>
-                <label>Jouw naam</label> <input type="text" size="30" name="name"><br>
-                <label>e-mail</label> <input type="email" size="30" name="email"><br>
-                <label>Bericht</label> <textarea name="bericht" row="8" cols="30"></textarea><br>
-                <input type="submit" value="Verzenden">
+                <input type="text" size="30" name="name" placeholder="Uw naam"><br>
+                <input type="email" size="30" name="email" placeholder="e-mail"><br>
+                <textarea name="bericht" row="8" cols="30" placeholder="Bericht"></textarea><br>
+                <button type="submit">
+                    <i class="fa fa-arrow-right"></i> Verzenden
+                </button>
+
             </form>
             <div class="contactgegevens">
-                <p>Jagersweg 15 - 2450 Meerhout</p>
+                <p><i class="fa fa-map-marker"></i>
+                    Jagersweg 15 - 2450 Meerhout
+                </p>
 
-                <p>Tel. +32 14308738</p>
+                <p><i class="fa fa-phone"></i>
+                    Tel. +32 14308738
+                </p>
             </div>
         </div>
     </div>
@@ -94,27 +115,125 @@
 <section class="subdivision blue_background">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 section-content">
+            <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
                 <h1>BEKO bvba</h1>
-                BEKO: Bekwame, Efficiënte en Kwaliteitsvolle Onderneming.
-                Al meer dan 30 jaar uw vertrouwen waard!
-                BEKO bvba is een authentieke en ambachtelijke schrijnwerkerij die hoogwaardige, kwaliteitsvolle
-                producten en diensten levert aan zowel particulieren als aan productiebedrijven en
-                (petro)chemische industrie.
-                Kwaliteit, veiligheid, gezondheid en milieuzorg zijn waarden die wij hoog in het vaandel dragen.
-                Niet alleen voor onze activiteiten op vlak van woon- winkel– en kantoorinrichting en algemene
-                binnen– en buitenschrijnwerkerij! Sinds 1997 hebben wij een VCA-label, en sedert 2010
-                voeren wij met trots het VCA-label Petrochemie. Ons personeel word voortdurend bijgeschoold,
-                zowel in hun vak als in veiligheid.
+
+                <p><img src="../images/html-images/handshake.jpg" width="180">
+                    BEKO: Bekwame, Efficiënte en Kwaliteitsvolle Onderneming.
+                    Al meer dan 30 jaar uw vertrouwen waard!
+                    BEKO bvba is een authentieke en ambachtelijke schrijnwerkerij die hoogwaardige, kwaliteitsvolle
+                    producten en diensten levert aan zowel particulieren als aan productiebedrijven en
+                    (petro)chemische industrie.
+                    Kwaliteit, veiligheid, gezondheid en milieuzorg zijn waarden die wij hoog in het vaandel dragen.
+                    Niet alleen voor onze activiteiten op vlak van woon- winkel– en kantoorinrichting en algemene
+                    binnen– en buitenschrijnwerkerij! Sinds 1997 hebben wij een VCA-label, en sedert 2010
+                    voeren wij met trots het VCA-label Petrochemie. <br>Ons personeel word voortdurend bijgeschoold,
+                    zowel in hun vak als in veiligheid.
+                </p>
+
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#beleidsverklaring" aria-controls="beleidsverklaring" role="tab" data-toggle="tab">Beleidsverklaring</a>
+                        </li>
+                        <li role="historiek">
+                            <a href="#historiek" aria-controls="historiek" role="tab" data-toggle="tab">Historiek</a>
+                        </li>
+                        <li role="kwaliteitslabels">
+                            <a href="#kwaliteitslabels" aria-controls="kwaliteitslabels" role="tab" data-toggle="tab">Kwaliteitslabels</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="beleidsverklaring">
+                            <h4>Beleidsverklaring</h4>
+
+                            <p>
+                                BEKO is een authentieke en ambachtelijke schrijnwerkerij waar kwaliteit,
+                                veiligheid, gezondheid en aandacht voor milieu centraal staan.
+                                De hoofdactiviteiten van de firma zijn voornamelijk gericht naar de
+                                (petro)chemische industrie. De wettelijke eisen vormen voor BEKO de
+                                minimale standaard. Indien er extra verwachtingen zijn van onze klanten,
+                                stellen wij graag alles in het werk om hieraan te voldoen. ‘Hoogwaardige,
+                                kwaliteitsvolle producten afleveren op een uiterst veilige manier’, dat is ons
+                                motto!<br>
+                                De zaakvoerder is verantwoordelijk voor de naleving van wettelijke eisen en
+                                regels met betrekking tot veiligheid, gezondheid en milieu en doet waar nodig
+                                beroep op externe deskundigen om hieraan te kunnen voldoen.
+                                We verbinden ons er toe onze prestaties en onze basiswaarden continu te
+                                verbeteren. Gevaren worden geïdentificeerd en de risico’s van onze activiteiten
+                                beoordeeld, uitgeschakeld en/of beheerst tot een aanvaardbaar niveau.
+                                Daarom stellen we objectieven in het jaaractieplan waarvan de vooruitgang
+                                regelmatig wordt opgevolgd en beoordeeld.<br>
+                                Het communiceren over het welzijnsbeleid binnen onze firma is essentieel. Het
+                                is daarenboven de plicht van BEKO om onze werknemers en leidinggevenden
+                                de nodige training te geven om hun verantwoordelijkheid binnen de firma
+                                correct op te nemen. BEKO stimuleert zijn werknemers om voorstellen te doen
+                                die bijdragen tot bevordering en verbetering van het welzijnsbeleid.
+                                Elke medewerker moet zijn werk in overeenstemming met de vastgelegde
+                                instructiekaarten uitvoeren en een aanvaardbaar en correct gedrag met
+                                betrekking tot milieu, gezondheid en veiligheid nastreven.<br>
+                                BEKO gaat voor een betere kwaliteit, veiligheid, gezondheid en milieu,
+                                dat komt ons allemaal ten goede.
+                            </p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in" id="historiek">
+                            <h4>Historiek</h4>
+
+                            <p>
+                                De kernactiviteiten van BEKO zijn opgebouwd rond binnen- en
+                                buitenschrijnwerkerij.
+                                Zaakvoerder Luc Opdebeek komt uit een hardwerkend gezin van 8 kinderen waarvan
+                                hij
+                                de jongste is. De passie voor hout zat hem in het bloed, en vanaf zijn twaalfde
+                                volgde hij de richting houtbewerking. Hij behaalde dit diploma met
+                                ‘uitmuntendheid’.
+                                Al gauw startte Luc in 1981 een eenmanszaak op. Tien jaar later gaat BEKO verder
+                                onder een andere ondernemingsvorm (bvba). Ondertussen stapte ook de partner van
+                                Luc
+                                mee in het bedrijf, en namen ook de kinderen Liebrecht en Claire Opdebeek een
+                                rol op
+                                in de bedrijfsvoering.<br>
+                                In april 1997 behaalde BEKO het VCA-certificaat. Tot op vandaag blijft het
+                                bedrijf
+                                werkzaamheden zoals woon-, winkel- en kantoorinrichting, algemene binnen- en
+                                buitenschrijnwerkerij uitvoeren. Daarnaast werkt BEKO sinds 1987 ook voor de
+                                chemische en petrochemische industrie. BEKO beschikt over een ervaren team van
+                                mensen die vooral herstellings- en onderhoudswerken aan koeltorens uitvoeren.
+                                Het
+                                behalen van het certificaat VCA Petrochemie in juli 2010 bevestigt ook hier weer
+                                het
+                                professionele niveau dat BEKO wenst na te streven.<br>
+                                Zaakvoerder Luc gaf zijn zoon de liefde voor het vak mee. Samen staan ze iedere
+                                dag
+                                met hun team klaar om de wensen van hun klanten maximaal waar te maken. Dochter
+                                Claire behartigt het theoretische aspect van de zaak en is eveneens intern
+                                preventieadviseur. Het behalen van het certificaat VCA Petrochemie is een
+                                verdienste
+                                die zij heeft helpen verwezenlijken.
+                            </p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in" id="kwaliteitslabels">
+                            <h4>Kwaliteitslabels</h4>
+
+                            <p>BEKO behaalde in april 1997 het VCA-certificaat en in juli 2010 het VCA
+                                Petrochemie. Download ze hier:
+                            <ul>
+                                <li>VCA-certificaat</li>
+                                <li>VCA Petrochemie</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- -->
+                </div>
             </div>
         </div>
-    </div>
 </section>
 <div id="schrijnwerkerij"></div>
 <section class="subdivision black_background">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 section-content">
+            <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
                 <h2>Schrijnwerkerij & interieurbouw</h2>
 
                 <p>
@@ -127,26 +246,37 @@
                     verschillende soorten kantmateriaal. Hiermee zorgen we voor een perfect
                     eindresultaat!</p>
 
-                <p>
-                <table>
-                    <td>
-                        <tr>Binnenschrijnwerkerij
-                            <ul>
-                                <li>keukeninrichting</li>
-                                <li>badkamermeubels</li>
-                                <li>binnendeuren</li>
-                                <li>plafonds</li>
-                                <li></li>
-                            </ul>
-                        </tr>
-                        <tr>
-                            Buitenschrijnwerkerij
-                        </tr>
-                    </td>
-                </table>
-
-                </p>
-
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Binnenschrijnwerkerij</h3>
+                        <ul>
+                            <li>keukeninrichting</li>
+                            <li>badkamermeubels</li>
+                            <li>binnendeuren</li>
+                            <li>plafonds</li>
+                            <li>lambrisering</li>
+                            <li>vloerbekleding</li>
+                            <li>maatkasten</li>
+                            <li>dressings</li>
+                            <li>trappen</li>
+                            <li>isolatie</li>
+                            <li>systeemwanden</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Buitenschrijnwerkerij</h3>
+                        <ul>
+                            <li>ramen & deuren</li>
+                            <li>daktimmerwerken</li>
+                            <li>skeletbouw</li>
+                            <li>gevelbekleding</li>
+                            <li>veranda's</li>
+                            <li>pergola's</li>
+                            <li>tuinmeubliair</li>
+                            <li>houten vloeren</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -155,7 +285,7 @@
 <section class="subdivision blue_background">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 section-content">
+            <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
                 <h2>Industrië</h2>
 
                 <p>
@@ -174,6 +304,47 @@
                     Haar expertise kan ook extern ter beschikking gesteld worden in het kader van
                     allerlei projecten.
                 </p>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#attractionvloeren" aria-controls="attractionvloeren" role="tab" data-toggle="tab">
+                            Attraction vloeren
+                        </a>
+                    </li>
+                    <li role="historiek">
+                        <a href="#systeemwanden" aria-controls="systeemwanden" role="tab" data-toggle="tab">
+                            Systeemwanden
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="attractionvloeren">
+                        <h4>Attraction vloeren</h4>
+                        <p>
+                            BEKO plaatst verschillende vloerafwerkingen voor zowel kantoorruimtes als winkels of
+                            keukens.
+                            Een van de producten waarmee we kunnen werken zijn bijvoorbeeld de Attraction-tegels. Dit
+                            zijn
+                            semi-flexibele vloertegels gemaakt uit pvc: een gerecycleerde onderlaag van 4 mm met een
+                            gekleurde slijtlaag uit pure pvc van 1 mm dik. De tekening wordt verkregen door onder hoge
+                            druk gekleurde granulaten in de gekalanderde meerkleurige slijtlaag te persen.Door de
+                            oppervlaktebehandelng met polyurethaan (PUR) behoeft deze vloer weinig onderhoud. De tegels
+                            koppelen we dankzij de zwaluwstaartverbindingen zonder hecht- of lasmiddelen aan elkaar. De
+                            tegels zijn antistatisch en voldoen aan de eisen voor gebruik in o.a. computerruimtes.
+                            De Attraction® tegels zijn bacteriostatisch en werden schimmelwerend behandeld.
+                        </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade in" id="systeemwanden">
+                        <h4>Systeemwanden</h4>
+                        <p>
+                            BEKO installeert verschillende systeemwanden, van Gyproc tot bijvoorbeeld Trespa.De
+                            Trespa-plaatmaterialen zijn uitzonderlijk op het vlak van hygiëne, makkelijk te reinigen en
+                            kunnen in verschillende designmogelijkheden toegepast worden. Ze zijn bovendien slag- en
+                            stootvast en vochtbestendig. Dankzij deze eigenschappen zijn ze ideaal voor
+                            interieurtoepassingen
+                            in o.a. zorginstellingen, luchthavens, sportcentra, bedrijven, winkels of musea.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -182,10 +353,10 @@
 <section class="subdivision black_background">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 section-content">
+            <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
                 <h2>Koeltorens</h2>
 
-                <p>
+                <p><img src="../images/html-images/koeltorens.JPG" width="180">
                     BEKO onderhoudt, herstelt en reinigt al meer dan 25 jaar koeltorens.
                     We analyseren en inspecteren zwakke punten.<br>
                     Een greep uit onze werkzaamheden aan koeltorens:
@@ -208,7 +379,7 @@
 <section class="subdivision blue_background">
     <div class="container">
         <div class="row">
-            <div class="col-md-9 section-content">
+            <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
                 <h2>Realisatie</h2>
 
                 <p>Enkele van onze realisaties in onze verschillende deeldomeinen (schrijnwerkerij & interieurbouw,
@@ -227,31 +398,39 @@
         <h2>Contact</h2>
 
         <form>
-            <label>Jouw naam</label> <input type="text" size="30" name="name"><br>
-            <label>e-mail</label> <input type="email" size="30" name="email"><br>
-            <label>Bericht</label> <textarea name="bericht" row="8" cols="30"></textarea><br>
-            <input type="submit" value="Verzenden">
+            <input type="text" size="30" name="name" placeholder="Uw naam"><br>
+            <input type="email" size="30" name="email" placeholder="e-mail"><br>
+            <textarea name="bericht" row="8" cols="30" placeholder="Bericht"></textarea><br>
+            <button type="submit">
+                <i class="fa fa-arrow-right"></i> Verzenden
+            </button>
         </form>
     </div>
 </section>
-<footer class="blue_background">
+<footer class="footer_wrap">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <ul>
                     <li><a href="#">Copyright</a></li>
                     <li><a href="#">Algemene voorwaarden</a></li>
                 </ul>
             </div>
-            <div class="col-md-6 contactgegevens">
-                <p>Beko bvba - Jagersweg 15 - 2450 Meerhout</p>
-                <p>Tel. +3214308738</p>
+            <div class="col-md-4"></div>
+            <div class="col-md-4 contactgegevens wow fadeIn">
+                <h4>Contact gegevens</h4>
+
+                <p>Beko bvba</p>
+
+                <p><i class="fa fa-map-marker"></i> Jagersweg 15 2450 Meerhout</p>
+
+                <p><i class="fa fa-phone"></i> Tel. +3214308738</p>
             </div>
         </div>
     </div>
-
 </footer>
 </div>
 <a href="#0" class="cd-top">Top</a>
+<script>new WOW().init();</script>
 </body>
 </html>
