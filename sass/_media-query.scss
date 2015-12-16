@@ -61,4 +61,21 @@
       padding: 10px 40px 40px 40px;
     }
   }
+
+  // footer
+  .footer_wrap {
+    .footer-left {
+      .contact {
+        margin-bottom: 50px;
+      }
+      .footer-menu {
+      }
+    }
+    .footer-right {
+      padding: 25px;
+      img {
+        margin: 0;
+      }
+    }
+  }
 }

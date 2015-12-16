@@ -120,11 +120,6 @@ header {
       top: 120px;
       position: fixed;
     }
-    .contactgegevens {
-      color: #ffffff;
-      margin-top: 35px;
-      text-align: center;
-    }
   }
 }
 
@@ -132,7 +127,7 @@ header {
 @import "forms";
 
 // footer
-footer {
+.footer_wrap {
   @extend .subdivision;
   background: $darkbleu;
   min-height: 150px;
@@ -143,6 +138,25 @@ footer {
     &:hover {
       text-decoration: none;
       color: $lightblue;
+    }
+  }
+  .footer-left {
+    .contact {
+      margin-bottom: 50px;
+    }
+    .footer-menu {
+      ul {
+      }
+      ul > li {
+        list-style-type: none;
+      }
+    }
+  }
+  .footer-right {
+    padding: 25px 0;
+    img {
+      float: right;
+      margin: 0;
     }
   }
 }
