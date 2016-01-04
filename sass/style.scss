@@ -1,165 +1,48 @@
-//import
-@import "roundcorners";
-@import "gradient-t2b";
-@import "placeholder";
-@import "to-top";
-@import "nav-tabs";
-@import "variabele";
+//=========================
+// @@ ++ Vars
+//=========================
+@import "vars/variabele";
+@import "vars/basicfonts";
 
-body {
-  margin: 0;
-  color: $black;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1.9em;
-  background: $wood_background-grey;
-}
+//=========================
+// @@ ++ Base
+//=========================
+@import "base/globals";
 
-//navigation
-.navbar-default {
-  background: $blue;
-  border-color: $midleblue;
-  .navbar-nav > li > a {
-    color: #ffffff;
-    &:hover {
-      color: $black;
-    }
-  }
-  .navbar-nav > li {
-    &.contact-mobile-display {
-      display: none;
-    }
-  }
-}
+//=========================
+// @@ ++ Mixin
+//=========================
+@import "mixin/roundcorners";
+@import "mixin/placeholder";
+@import "mixin/opacity";
+@import "mixin/transform";
+@import "mixin/gradient-t2b";
 
-//header region
-header {
-  min-height: 250px;
-  background: $darkgrey;
-  margin-top: 50px;
-  border-bottom: $borderBottom;
-  .logo {
-    margin-top: 55px;
-  }
-  .slogans {
-    color: #ffffff;
-    margin-top: 60px;
-    font-size: 12px;
-    line-height: 1.4em;
-    padding: 0 40px 0;
-  }
-  .certification {
-    padding: 40px 0 0;
-    text-align: right;
-    img {
-      padding-right: 20px;
-    }
-  }
-}
 
-//subdivision
-.subdivision {
-  min-height: 350px;
-  margin-top: 70px;
-  padding: 35px 0;
-  border-bottom: $borderBottom;
-  h1, h2 {
-    padding-left: 53px;
-    background: url("../images/title_header.png") no-repeat left center;
-    margin-left: -55px;
-  }
-  h3 {
-    @extend h2;
-    margin-left: 0px;
-    padding-left: 35px;
-  }
-  h4 {
-    @extend h3;
-    padding-left: 25px;
-    background: url("../images/title_header_h4.png") no-repeat left center;
-  }
-  .section-content {
-    background: #ffffff;
-    //background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
-    color: #000000;
-    padding: 10px 110px 40px 40px;
-    @include roundcorners(25px);
-  }
-  //html misschien aanpassen
-  img {
-    float: left;
-    margin-right: 10px;
-  }
-}
+//=========================
+// @@ ++ Layout
+//=========================
+@import "layout/header";
+@import "layout/subdivision";
+@import "layout/sidebar";
+@import "layout/footer";
 
-.blue_background {
-  @include bg-gradient-t2b($darkbleu, $blue);
 
-}
+//========================
+// @@ ++ Components
+//========================
+@import "components/to-top";
+@import "components/custom-modal";
+@import "components/navigatie";
+@import "components/forms";
+@import "components/tabs-content";
 
-.black_background {
-  @include bg-gradient-t2b($darkgrey, $darkbleu);
-}
+//=======================
+// @@ ++ State
+//=======================
+@import "state/media-query-nav_collapse";
+@import "state/media-query";
 
-//sidebar
-.nonmobile-contact-wrap {
-  display: block;
-  h2 {
-    color: #ffffff;
-    padding-bottom: 25px;
-  }
-  .sticky {
-    position: absolute;
-    min-height: 500px;
-    background: $blue;
-    padding: 10px 25px;
-    border: solid 1px $lightblue;
-    margin-top: -50px;
-    z-index: 999;
-    &.stick {
-      top: 120px;
-      position: fixed;
-    }
-  }
-}
-
-//Forms layout
-@import "forms";
-
-// footer
-.footer_wrap {
-  @extend .subdivision;
-  background: $darkbleu;
-  min-height: 150px;
-  border: none;
-  color: $lightblue;
-  a {
-    color: $lightblue;
-    &:hover {
-      text-decoration: none;
-      color: $lightblue;
-    }
-  }
-  .footer-left {
-    .contact {
-      margin-bottom: 50px;
-    }
-    .footer-menu {
-      ul {
-      }
-      ul > li {
-        list-style-type: none;
-      }
-    }
-  }
-  .footer-right {
-    padding: 25px 0;
-    img {
-      float: right;
-      margin: 0;
-    }
-  }
-}
-
-//import media query's
-@import "media-query";
+//=======================
+// @@ ++ Theme
+//=======================
