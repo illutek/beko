@@ -1,0 +1,16 @@
+//navigation
+.navbar-default {
+  background: $blue;
+  border-color: $midleblue;
+  .navbar-nav > li > a {
+    color: #ffffff;
+    &:hover {
+      color: $black;
+    }
+  }
+  .navbar-nav > li {
+    &.contact-mobile-display {
+      display: none;
+    }
+  }
+}

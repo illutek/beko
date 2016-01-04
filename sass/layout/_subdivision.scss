@@ -1,0 +1,31 @@
+//========================
+// @@ ++ Subdivision
+//========================
+
+.subdivision {
+  min-height: 350px;
+  margin-top: 70px;
+  padding: 35px 0;
+  border-bottom: $borderBottom;
+  .section-content {
+    background: #ffffff;
+    //background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+    color: #000000;
+    padding: 10px 110px 40px 40px;
+    @include roundcorners(25px);
+  }
+  //html misschien aanpassen
+  img {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.blue_background {
+  @include bg-gradient-t2b($darkbleu, $blue);
+
+}
+
+.black_background {
+  @include bg-gradient-t2b($darkgrey, $darkbleu);
+}

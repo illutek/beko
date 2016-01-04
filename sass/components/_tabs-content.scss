@@ -1,0 +1,22 @@
+@import "../vars/_variabele";
+//tabs op pagina BEKO voorstelling
+.nav-tabs {
+  border-bottom: 1px solid $lightblue;
+  margin: 20px 0 20px;
+  &>li>a:hover {
+    background: transparent;
+  }
+  &>li.active>a:focus,
+  &>li.active>a {
+    border: 1px solid $lightblue;
+    border-bottom-color: #ffffff;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .nav-tabs {
+    li > a {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+}

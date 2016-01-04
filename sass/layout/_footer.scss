@@ -1,0 +1,51 @@
+//=========================
+// @@ ++ Footer region
+//=========================
+.footer_wrap {
+  @extend .subdivision;
+  background: $darkbleu;
+  min-height: 150px;
+  border: none;
+  color: $lightblue;
+  a {
+    color: $lightblue;
+    &:hover {
+      text-decoration: none;
+      color: $lightblue;
+    }
+  }
+  .footer-left {
+    .contact {
+      margin-bottom: 50px;
+      .tel-not-mobile {
+        display: block;
+      }
+      .tel-mobile {
+        display: none;
+        .btn {
+          @extend button[type='submit'];
+          border-radius: 0px;
+          &-default {
+            width: 100%;
+            padding: 15px 0 5px;
+          }
+        }
+      }
+    }
+    .footer-menu {
+      .copy-conditions {
+        cursor: pointer;
+        .fa-copyright {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+  .footer-right {
+    padding: 25px 0;
+    img {
+      float: right;
+      margin: 0;
+    }
+  }
+}

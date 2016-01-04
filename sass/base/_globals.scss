@@ -1,0 +1,27 @@
+//==========================================
+// ## ++ Globals
+//==========================================
+
+body {
+  margin: 0;
+  color: $black;
+  font-family: $font-verdana;
+  font-size: 14px;
+  line-height: 1.9em;
+  background: $wood_background-grey;
+}
+
+h1, h2, h3 {
+  padding-left: 53px;
+  background: $heading1to3;
+  margin-left: -55px;
+}
+
+h3 {
+  margin-left: 0px;
+  padding-left: 35px;
+}
+h4 {
+  padding-left: 25px;
+  background: $heading4;
+}

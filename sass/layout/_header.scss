@@ -1,0 +1,26 @@
+//=========================
+// @@ ++ Header region
+//=========================
+header {
+  min-height: 250px;
+  background: $darkgrey;
+  margin-top: 50px;
+  border-bottom: $borderBottom;
+  .logo {
+    margin-top: 55px;
+  }
+  .slogans {
+    color: #ffffff;
+    margin-top: 60px;
+    font-size: 12px;
+    line-height: 1.4em;
+    padding: 0 40px 0;
+  }
+  .certification {
+    padding: 40px 0 0;
+    text-align: right;
+    img {
+      padding-right: 20px;
+    }
+  }
+}
