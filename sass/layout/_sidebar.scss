@@ -2,25 +2,3 @@
 // @@ ++ Sidebar
 //=======================
 
-.nonmobile-contact-wrap {
-  display: block;
-  opacity: 1;
-  h2 {
-    color: #ffffff;
-    padding-bottom: 25px;
-    background: none;
-  }
-  .sticky {
-    position: absolute;
-    min-height: 500px;
-    background: $blue;
-    padding: 10px 25px;
-    border: solid 1px $lightblue;
-    margin-top: -50px;
-    z-index: 999;
-    &.stick {
-      top: 120px;
-      position: fixed;
-    }
-  }
-}

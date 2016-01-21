@@ -1,4 +1,6 @@
-//navigation
+//==================================================
+// ## ++ Navigation
+//==================================================
 .navbar-default {
   background: $blue;
   border-color: $midleblue;
@@ -13,4 +15,11 @@
       display: none;
     }
   }
+}
+
+//=======================
+// ## ++ Admin toolbar
+//=======================
+#toolbar {
+  margin-top: 50px;
 }

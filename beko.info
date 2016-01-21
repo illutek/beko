@@ -1,0 +1,27 @@
+name = Beko
+description = Drupal 7 theme voor BEKO bvba
+core = 7.x
+engine = phptemplate
+
+;STYLESHEETS
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/animate.css
+stylesheets[all][] = css/style.css
+
+;JS
+scripts[]   =   js/bootstrap.min.js
+scripts[]   =   js/scroll-data_id.js
+scripts[]   =   js/to_top.js
+scripts[]   =   js/collapse.nav.js
+scripts[]   =   js/sticky.js
+scripts[]   =   js/custom-modal.js
+scripts[]   =   js/wow.min.js
+
+;REGIONS
+regions[slogan]     = Slogan
+regions[content]    = Content
+regions[contact]    = Contact Niet mobile
+regions[contactbis] = Contact Mobile
+regions[schrijnwerkerij]     = Schrijnwerkerij
+regions[industrie]  = Industrie
+regions[koeltorens] = Koeltorens

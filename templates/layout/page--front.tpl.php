@@ -1,109 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head lang="nl">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BEKO</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- <script src="../js/jquery.smooth-scroll.js"></script> -->
-    <script src="../js/scroll-data_id.js"></script>
-    <script src="../js/sticky.js"></script>
-    <script src="../js/to_top.js"></script>
-    <script src="../js/wow.min.js"></script>
-    <script src="../js/collapse.nav.js"></script>
-    <script src="../js/custom-modal.js"></script>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Stefan
+ * Date: 5/01/2016
+ * Time: 15:00
+ */
+?>
 <div id="home"></div>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav with-indicator">
-                <li class="nav-item">
-                    <a href="#" data-id="home" class="scroll-link"><i class="fa fa-home"></i>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" data-id="beko" class="scroll-link">BEKO</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" data-id="schrijnwerkerij" class="scroll-link">Schrijnwerkerij & interieurbouw</a></li>
-                <li class="nav-item">
-                    <a href="#" data-id="industrie" class="scroll-link">Industrieprojecten</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" data-id="koeltorens" class="scroll-link">Koeltorens</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" data-id="realisaties" class="scroll-link">Realisaties</a>
-                </li>
-                <li class="contact-mobile-display">
-                    <a href="#" data-id="contact-mobile" class="scroll-link">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 logo">
-                <img src="../logo.png" alt="logo Beko" width="275">
-            </div>
-            <div class="col-md-5 slogans">
-                <p>Kom gerust eens praten over kwaliteit!<br/>
-                    Voor Beko bvba komt kwaliteit tot uiting in productkeuze, afwerking en service.
-                    Kom gerust eens praten, en ontdek waarom wij bevoorrechte partner zijn voor
-                    de binnen- en buitenafwerking van gebouwen.
-                </p>
-            </div>
-            <div class="col-md-4 certification">
-                <img src="../images/LRQA-2010-vca-petrochemie_white.png" height="100">
-                <img src="../images/Bureau-Veritas-Certificaten-VCA-400x186.png" height="70">
-            </div>
-        </div>
-    </div>
-    <!-- end row -->
-    </div>
-</header>
+<?php
+/**
+ * include van navigatie en header
+ */
+    include 'navigation.inc.php';
+    include 'header.inc.php';
+?>
+
 <div id="sticky-anchor"></div>
 <!-- Het sticky contactform -->
 <div class="container nonmobile contact-wrap">
     <div class="col-md-offset-8">
         <div class="sticky">
-            <h2>Contact</h2>
-
-            <form>
-                <input type="text" size="30" name="name" placeholder="Uw naam"><br>
-                <input type="email" size="30" name="email" placeholder="e-mail"><br>
-                <textarea name="bericht" row="8" cols="30" placeholder="Bericht"></textarea><br>
-                <input type="submit">
-                    <!-- <i class="fa fa-arrow-right"></i> Verzenden -->
-
-            </form>
+            <?php print render($page['contact']); ?>
             <div class="contactgegevens">
                 <p><i class="fa fa-map-marker"></i>
                     Jagersweg 15 - 2450 Meerhout
                 </p>
-
                 <p><i class="fa fa-phone"></i>
                     Tel. +32 14308738
                 </p>
@@ -111,40 +33,36 @@
         </div>
     </div>
 </div>
+
 <div id="beko"></div>
+<!-- main content -->
 <section class="subdivision blue_background">
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
-                <h1>BEKO bvba</h1>
-
-                <p><img src="../images/html-images/handshake.jpg" width="180">
-                    BEKO: Bekwame, Efficiënte en Kwaliteitsvolle Onderneming.
-                    Al meer dan 30 jaar uw vertrouwen waard!
-                    BEKO bvba is een authentieke en ambachtelijke schrijnwerkerij die hoogwaardige, kwaliteitsvolle
-                    producten en diensten levert aan zowel particulieren als aan productiebedrijven en
-                    (petro)chemische industrie.
-                    Kwaliteit, veiligheid, gezondheid en milieuzorg zijn waarden die wij hoog in het vaandel dragen.
-                    Niet alleen voor onze activiteiten op vlak van woon- winkel– en kantoorinrichting en algemene
-                    binnen– en buitenschrijnwerkerij! Sinds 1997 hebben wij een VCA-label, en sedert 2010
-                    voeren wij met trots het VCA-label Petrochemie. <br>Ons personeel word voortdurend bijgeschoold,
-                    zowel in hun vak als in veiligheid.
-                </p>
+                <a id="main-content"></a>
+                <?php print render($title_prefix); ?>
+                <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+                <?php print render($title_suffix); ?>
+                <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+                <?php print render($page['help']); ?>
+                <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+                <?php print render($page['content']); ?>
 
                 <div class="col-md-12">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#beleidsverklaring" aria-controls="beleidsverklaring" role="tab" data-toggle="tab">Beleidsverklaring</a>
+                        <li class="active">
+                            <a href="#Beleidsverklaring" data-toggle="tab">Beleidsverklaring</a>
                         </li>
-                        <li role="historiek">
-                            <a href="#historiek" aria-controls="historiek" role="tab" data-toggle="tab">Historiek</a>
+                        <li>
+                            <a href="#historiek" data-toggle="tab">Historiek</a>
                         </li>
-                        <li role="kwaliteitslabels">
-                            <a href="#kwaliteitslabels" aria-controls="kwaliteitslabels" role="tab" data-toggle="tab">Kwaliteitslabels</a>
+                        <li>
+                            <a href="#kwaliteitslabels" data-toggle="tab">Kwaliteitslabels</a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade in active" id="beleidsverklaring">
+                        <div role="tabpanel" class="tab-pane fade in active" id="Beleidsverklaring">
                             <h4>Beleidsverklaring</h4>
 
                             <p>
@@ -234,17 +152,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
-                <h2>Schrijnwerkerij & interieurbouw</h2>
-
-                <p>
-                    <img src="../images/html-images/binnen-schrijnwerkerij.jpg" width="180">BEKO bvba kan bogen op meer
-                    dan 30 jaar ervaring in algemene binnen– en
-                    buitenschrijnwerkerij voor woon– winkel– en kantoorinrichting. Wij beschikken
-                    over een modern uitgerust atelier waarin we haast elke uitdaging op het vlak
-                    van schrijnwerkerij aan kunnen.
-                    Zo beschikken we over een kantenverlijmer die al onze platen aflijmt met
-                    verschillende soorten kantmateriaal. Hiermee zorgen we voor een perfect
-                    eindresultaat!</p>
+                <?php print render($page['schrijnwerkerij']); ?>
 
                 <div class="row">
                     <div class="col-md-6">
@@ -286,24 +194,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
-                <h2>Industrië</h2>
-
-                <p>
-                    <img src="../images/html-images/industrie.jpg" width="180">
-                    BEKO bvba heeft in de loop der jaren een uitgebreid dienstenpakket uitgewerkt,
-                    vooral voor de chemische en petrochemische industrie. Ook productie- of
-                    dienstverlenende bedrijven doen beroep op ons voor de inrichting van kantoor-
-                    en industriële ruimtes, computerruimtes, hygiënische ruimtes, maar ook voor
-                    koude- en warme keukens (vb.metaalconstructies, brandwerende deuren en wanden,
-                    vloerafwerking zoals vb. attraction vloeren en computervloeren, gevelbekleding,
-                    plafondsystemen,systeemwanden…).<br>
-                    Door ons voortdurend streven naar kwaliteit en veiligheid kunnen wij sinds
-                    2010 prat gaan op een certificaat VCA-Petrochemie.
-                    Eigen preventieadviseur, ook extern beschikbaar
-                    BEKO bvba heeft met Claire Opdebeek een eigen preventieadviseur in huis.
-                    Haar expertise kan ook extern ter beschikking gesteld worden in het kader van
-                    allerlei projecten.
-                </p>
+                <?php print render($page['industrie']); ?>
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active">
                         <a href="#attractionvloeren" aria-controls="attractionvloeren" role="tab" data-toggle="tab">
@@ -356,23 +247,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
-                <h2>Koeltorens</h2>
-
-                <p><img src="../images/html-images/koeltorens.JPG" width="180">
-                    BEKO onderhoudt, herstelt en reinigt al meer dan 25 jaar koeltorens.
-                    We analyseren en inspecteren zwakke punten.<br>
-                    Een greep uit onze werkzaamheden aan koeltorens:
-                <ul>
-                    <li> demonteren en monteren van houten structuurbalken, polyester en inox</li>
-                    <li>vervangen of reinigen van sproeisystemen</li>
-                    <li>biocidebehandeling</li>
-                    <li>plaatsen van roosters, deksels en andere beveiligingen</li>
-                    <li>vernieuwen van daken van koeltorens</li>
-                    <li>waterbakken, verdeelbuizen en vulpakketten
-                    </li>
-                </ul>
-
-                </p>
+                <?php print render($page['koeltorens']); ?>
             </div>
         </div>
     </div>
@@ -397,54 +272,17 @@
 <div id="contact-mobile"></div>
 <section class="subdivision black_background mobile contact-wrap">
     <div class="container">
-        <h2>Contact</h2>
-
-        <form>
-            <input type="text" size="30" name="name" placeholder="Uw naam"><br>
-            <input type="email" size="30" name="email" placeholder="e-mail"><br>
-            <textarea name="bericht" row="8" cols="30" placeholder="Bericht"></textarea><br>
-            <button type="submit">
-                <i class="fa fa-arrow-right"></i> Verzenden
-            </button>
-        </form>
+        <?php print render($page['contactbis']); ?>
     </div>
 </section>
-<footer class="footer_wrap">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 footer-left wow fadeIn">
-                <div class="col-md-12 contact">
-                    <h4>Contact gegevens</h4>
 
-                    <p>Beko bvba</p>
+<?php
+/**
+ * include van footer
+ */
+    include 'footer.inc.php';
+?>
 
-                    <p><i class="fa fa-map-marker"></i> Jagersweg 15 2450 Meerhout</p>
-
-                    <div class="tel-not-mobile">
-                        <p><i class="fa fa-phone"></i> Tel. +3214308738</p>
-                    </div>
-                    <div class="tel-mobile">
-                        <a href="tel:+3214308738">
-                            <button type="button" class="btn btn-default">
-                                <p><i class="fa fa-phone"></i> Tel. +3214308738</p>
-                            </button>
-                        </a>
-
-                    </div>
-                </div>
-                <div class="col-md-12 footer-menu">
-                    <div class="copy-conditions">
-                        <i class="fa fa-copyright"></i>Copyright en Algemene voorwaarden
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 footer-right">
-                <img class="img-responsive" src="../images/beko_footer_folder.jpg" alt="BEKO bvba folder">
-            </div>
-
-        </div>
-    </div>
-</footer>
 </div>
 <!-- modal om de copyright en Algemene voorwaarden te tonen, deze optie gekozen
 om niet een pagina hieraan te moeten koppelen (weinig tekst)
@@ -490,5 +328,3 @@ bij Drupal 1 inhoudstype aanmaken (teksten-footer) met een view deze alle printe
 </div>
 <a href="#0" class="cd-top">Top</a>
 <script>new WOW().init();</script>
-</body>
-</html>

@@ -1,6 +1,6 @@
-/*
-*media query's
-========================================================================*/
+//================================================
+// ## ++ media query's
+//================================================
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode */
@@ -17,10 +17,10 @@
       }
     }
   }
-  .nonmobile-contact-wrap {
+  .nonmobile.contact-wrap {
     display: none;
   }
-  .contact-mobile-display {
+  .mobile.contact-wrap {
     display: block;
     h2 {
       color: #ffffff;
@@ -52,6 +52,12 @@
 
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */
+
+  img {
+    float: none;
+    margin-right: 0;
+  }
+
   header {
     .logo, .certification {
       text-align: center;

@@ -1,5 +1,13 @@
 ##BEKO bvba
 
+###Article
+Dit inhoudstype gebruikt voor alle core teksten, welcome, schrijnwerkerij, 
+industrië en koeltorens, de welkome tekst is gepubliseerd op de homepage en
+is daardoor een teaser (link op titel en readmore verwijdert)
+Andere zijn volledige nodes (blokken met views).  
+Op node--article.tpl.php de h1 en h2 op teaser controle (SEO h1 als eerst met
+verschillende h2)
+
 ###Schrijnwerkerij
 Onder de tekst 2 onderverdelingen Binnen- en buiten schrijnwerkerij, niet in een tabel
 maar 2 extra div's, in het inhoudstype uiteraard ook 2 extra tekstvakken of misschien een
@@ -11,6 +19,12 @@ Proberen te laten scrollen met de code van Koen Timmers, dit is uiteindelijk de 
 
 
 wow effect op de section-content op 20151213 het fadeIn effect
+
+
+###Form
+De ```input[type='submit']``` op het webform display none, via form_alter een ```button[type='submit']``
+aangemaakt om de arrow van font-awesome te kunnen plaatsen.  
+De online versie heeft 'webform_client_form_4' hier wordt op gecontroleerd.
 
 
 

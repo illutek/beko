@@ -1,6 +1,6 @@
-//=========================
+//===============================
 // @@ ++ Footer region
-//=========================
+//===============================
 .footer_wrap {
   @extend .subdivision;
   background: $darkbleu;
@@ -23,6 +23,7 @@
       .tel-mobile {
         display: none;
         .btn {
+          /*@extend button[type='submit'];*/
           @extend button[type='submit'];
           border-radius: 0px;
           &-default {

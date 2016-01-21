@@ -1,4 +1,6 @@
-//variabele
+//=================================================
+// ## ++ Variabele
+//=================================================
 $blue: #0173b9;
 $lightblue: #87d1fe;
 $midleblue: #22aafd;
@@ -11,3 +13,13 @@ $wood_background-grey: url("../images/background-retina_wood-min.png")repeat fix
 $wood_background-brown: url("../images/retina_wood.png")repeat fixed;
 $heading1to3: url("../images/title_header.png") no-repeat left center;
 $heading4: url("../images/title_header_h4.png") no-repeat left center;
+
+//=================================================
+// ## ++ Placeholders
+//=================================================
+//Dit om de headings te overschrijven
+%heading {
+  padding-left: 0;
+  background: none;
+  margin-left: 0;
+}
