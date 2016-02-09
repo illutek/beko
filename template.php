@@ -62,4 +62,6 @@ function beko_preprocess_node(&$variables)
         $variables['nodeEdit'] = '<div class="edit-icon">' . '<a href="' . url('node/' . $node->nid . '/edit') . '">' .
             '<i class="fa fa-pencil-square-o"></i>' . t(' Edit') . '</a>' . '</div>';
     }
+
+    $variables['realisatieImageTeaser'] = drupal_render($variables['content']['field_realisatie_img'][0]);
 }
