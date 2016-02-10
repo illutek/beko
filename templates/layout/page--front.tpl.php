@@ -264,7 +264,7 @@
                     industrieprojecten...).<br>
                     Voor referenties mag u steeds telefonisch contact met ons opnemen.</p>
 
-                <p><a href="#">Meer realisatie</a></p>
+                <p><a href="<?php print base_path() ?>realisaties">Overzicht realisaties</a></p>
             </div>
         </div>
     </div>

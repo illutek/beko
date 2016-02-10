@@ -13,7 +13,7 @@
 /**
  * include van navigatie en header
  */
-include 'navigation.inc.php';
+include 'navigation-page.inc.php';
 include 'header.inc.php';
 ?>
 
