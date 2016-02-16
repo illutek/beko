@@ -318,7 +318,7 @@ bij Drupal 1 inhoudstype aanmaken (teksten-footer) met een view deze alle printe
 
                     <p>Alle klachten dienen binnen de vijf dagen aangetekend te gebeuren.
 
-                    <p>
+                    </p>
 
                     <p>Voor alle betwistingen zijn enkel de Rechtbanken van Turnhout bevoegd.</p>
                 </div>

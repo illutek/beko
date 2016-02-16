@@ -352,8 +352,8 @@ header {
   float: left;
   padding: 0 10px; }
   .teaserRealisatieWrap h3 {
-    background: none;
-    padding-left: 0; }
+    background: url("../images/title_header_h4.png") no-repeat left center;
+    padding-left: 24px; }
 
 .nav-tabs {
   border-bottom: 1px solid #87d1fe;
