@@ -37,6 +37,10 @@ function beko_preprocess_html(&$variables)
 function beko_preprocess_page(&$variables)
 {
     $variables['imagepath'] = $variables['base_path'] . $variables['directory'] . '/images/';
+
+    if (drupal_is_front_page()) {
+        drupal_add_js(drupal_get_path('theme', 'beko') . '/js/sticky.js', array('weight' => 2));
+    }
 }
 
 /**

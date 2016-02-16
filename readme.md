@@ -24,7 +24,15 @@ wow effect op de section-content op 20151213 het fadeIn effect
 ###Form
 De ```input[type='submit']``` op het webform display none, via form_alter een ```button[type='submit']``
 aangemaakt om de arrow van font-awesome te kunnen plaatsen.  
-De online versie heeft 'webform_client_form_4' hier wordt op gecontroleerd.
+De online versie heeft 'webform_client_form_4' hier wordt op gecontroleerd.  
+
+Het formulier wordt sticky wanneer het de top van de page bereikt, het bestand sticky.js zorgt hiervoor, 
+het aanroepen van dit bestand gebeurde in eerste instantie in het .info bestand, maar dit gaf dan weer 
+problemen op de page.tpl.php omdat daar geen form getoond wordt en ook de link naar de modal 
+(copyright en voorwaarden) werkt niet.  
+Het aanroepen van sticky.js gebeurt nu op template.php onder voorwaarde if (drupal_is_front_page()){} 
+als ook een weight moeten meegeven om ervoor te zorgen dat deze later (sticky.js) komt dan jquery.min.js
+
 
 
 

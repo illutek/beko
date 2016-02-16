@@ -82,7 +82,7 @@
 
 if ($teaser):
     print '<div class="teaserRealisatieWrap">' .
-        '<h3>' . '<a href="<?php print $node_url; ?>">' . $title . '</a>' . '</h3>' .
+        '<h3>' . '<a href=' . $node_url . '>' . $title . '</a>' . '</h3>' .
         $realisatieImageTeaser . '</div>';
 else:
     /**
@@ -90,9 +90,19 @@ else:
      */
     ?>
     <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-        <h2><?php print $title; ?></h2>
+        <!-- Title will not be printed here, page.tpl.php does this -->
         <div class="content">
-            <?php print render($content); ?>
+            <?php
+            print '<div class="bodyRealisatie">' .
+                render($content['body']) . '</div>';
+            print render($content['field_realisatie_img']);
+            ?>
         </div>
+    </div>
+    <div class="backto">
+        <?php
+        $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+        echo "<a href='$url'>" . "<i class='fa fa-chevron-left fa-lg'></i> Terug naar overzicht</a>";
+        ?>
     </div>
 <?php endif; ?>

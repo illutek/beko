@@ -355,6 +355,15 @@ header {
     background: url("../images/title_header_h4.png") no-repeat left center;
     padding-left: 24px; }
 
+.bodyRealisatie {
+  padding-bottom: 20px; }
+
+.imgRealisaties {
+  padding-bottom: 10px; }
+
+.backto {
+  padding-top: 25px; }
+
 .nav-tabs {
   border-bottom: 1px solid #87d1fe;
   margin: 20px 0 20px; }

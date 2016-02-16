@@ -13,7 +13,7 @@ scripts[]   =   js/bootstrap.min.js
 scripts[]   =   js/scroll-data_id.js
 scripts[]   =   js/to_top.js
 scripts[]   =   js/collapse.nav.js
-scripts[]   =   js/sticky.js
+//scripts[]   =   js/sticky.js
 scripts[]   =   js/custom-modal.js
 scripts[]   =   js/wow.min.js
 
