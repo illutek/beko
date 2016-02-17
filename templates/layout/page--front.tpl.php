@@ -67,7 +67,7 @@ include 'header.inc.php';
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade in active" id="Beleidsverklaring">
                             <h4>Beleidsverklaring</h4>
-                            
+
                             <p>
                                 BEKO is een authentieke en ambachtelijke schrijnwerkerij waar kwaliteit,
                                 veiligheid, gezondheid en aandacht voor milieu centraal staan.
