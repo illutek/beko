@@ -8,6 +8,12 @@ Andere zijn volledige nodes (blokken met views).
 Op node--article.tpl.php de h1 en h2 op teaser controle (SEO h1 als eerst met
 verschillende h2)
 
+####Sub articles
+Deze worden via een tab systeem onderaan de artcles getoond, na lang overdenken deze op een 
+eenvoudige manier via een inhoudstype bv 'subArticle' en dan de juiste tonen via de array plaats.  
+Een simple oplossing, dit omdat we verwachten dat er niet onmiddelijk nood is aan een uitbreiding
+van het aantal subartikelen.
+
 ###Schrijnwerkerij
 Onder de tekst 2 onderverdelingen Binnen- en buiten schrijnwerkerij, niet in een tabel
 maar 2 extra div's, in het inhoudstype uiteraard ook 2 extra tekstvakken of misschien een

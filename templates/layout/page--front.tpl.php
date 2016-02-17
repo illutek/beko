@@ -12,8 +12,8 @@
 /**
  * include van navigatie en header
  */
-    include 'navigation.inc.php';
-    include 'header.inc.php';
+include 'navigation.inc.php';
+include 'header.inc.php';
 ?>
 
 <div id="sticky-anchor"></div>
@@ -26,6 +26,7 @@
                 <p><i class="fa fa-map-marker"></i>
                     Jagersweg 15 - 2450 Meerhout
                 </p>
+
                 <p><i class="fa fa-phone"></i>
                     Tel. +32 14308738
                 </p>
@@ -44,9 +45,11 @@
                 <?php print render($title_prefix); ?>
                 <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
                 <?php print render($title_suffix); ?>
-                <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+                <?php if ($tabs): ?>
+                    <div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
                 <?php print render($page['help']); ?>
-                <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+                <?php if ($action_links): ?>
+                    <ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
                 <?php print render($page['content']); ?>
 
                 <div class="col-md-12">
@@ -64,7 +67,7 @@
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade in active" id="Beleidsverklaring">
                             <h4>Beleidsverklaring</h4>
-
+                            
                             <p>
                                 BEKO is een authentieke en ambachtelijke schrijnwerkerij waar kwaliteit,
                                 veiligheid, gezondheid en aandacht voor milieu centraal staan.
@@ -282,7 +285,7 @@
 /**
  * include van footer
  */
-    include 'footer.inc.php';
+include 'footer.inc.php';
 ?>
 
 </div>

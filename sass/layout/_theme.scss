@@ -1,0 +1,46 @@
+//========================
+// @@ ++ Subdivision
+//========================
+
+.subdivision {
+  min-height: 350px;
+  margin-top: 70px;
+  padding: 35px 0;
+  border-bottom: $borderBottom;
+  .section-content {
+    background: #ffffff;
+    overflow: hidden;
+    //background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+    color: #000000;
+    padding: 10px 110px 40px 40px;
+    @include roundcorners(25px);
+  }
+  .section-content-page {
+    @extend .section-content;
+    padding: 10px 30px 40px 40px;
+  }
+  blockquote {
+    display: inline-block;
+    background: $VCAred;
+    color: #ffffff;
+    width: 40%;
+    margin: 20px;
+    float: right;
+    padding: 20px 10px;
+  }
+
+  //Dit om de readmore te verwijderen
+  ul.inline {
+    li.node-readmore {
+      display: none;
+    }
+  }
+}
+
+.blue_background {
+  @include bg-gradient-t2b($darkbleu, $blue);
+}
+
+.black_background {
+  @include bg-gradient-t2b($darkgrey, $darkbleu);
+}

@@ -154,6 +154,14 @@ header {
     border-radius: 25px; }
   .subdivision .section-content-page, .footer_wrap .section-content-page {
     padding: 10px 30px 40px 40px; }
+  .subdivision blockquote, .footer_wrap blockquote {
+    display: inline-block;
+    background: #b72033;
+    color: #ffffff;
+    width: 40%;
+    margin: 20px;
+    float: right;
+    padding: 20px 10px; }
   .subdivision ul.inline li.node-readmore, .footer_wrap ul.inline li.node-readmore {
     display: none; }
 
