@@ -11,13 +11,16 @@
     padding-left: 24px;
   }
 }
-.bodyRealisatie {
-  padding-bottom: 20px;
+
+.contentRealisatie {
+  .bodyRealisatie {
+    padding-bottom: 20px;
+  }
+  img {
+    padding-bottom: 10px;
+  }
 }
 
-.imgRealisaties {
-  padding-bottom: 10px;
-}
 .backto {
   padding-top: 25px;
 }

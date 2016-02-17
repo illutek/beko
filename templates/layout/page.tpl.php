@@ -22,7 +22,7 @@ include 'header.inc.php';
 <section class="subdivision blue_background">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 section-content wow fadeIn" data-wow-duration="3s">
+            <div class="col-md-12 section-content-page wow fadeIn" data-wow-duration="3s">
                 <a id="main-content"></a>
                 <?php print render($title_prefix); ?>
                 <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>

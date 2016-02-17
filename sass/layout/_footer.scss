@@ -26,9 +26,10 @@
           /*@extend button[type='submit'];*/
           @extend button[type='submit'];
           border-radius: 0px;
+          margin-top: 15px;
           &-default {
             width: 100%;
-            padding: 15px 0 5px;
+            padding: 15px 0 10px;
           }
         }
       }

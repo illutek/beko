@@ -144,7 +144,7 @@ header {
   margin-top: 70px;
   padding: 35px 0;
   border-bottom: solid 2px #fe0000; }
-  .subdivision .section-content, .footer_wrap .section-content {
+  .subdivision .section-content, .footer_wrap .section-content, .subdivision .section-content-page, .footer_wrap .section-content-page {
     background: #ffffff;
     overflow: hidden;
     color: #000000;
@@ -152,6 +152,8 @@ header {
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px; }
+  .subdivision .section-content-page, .footer_wrap .section-content-page {
+    padding: 10px 30px 40px 40px; }
   .subdivision ul.inline li.node-readmore, .footer_wrap ul.inline li.node-readmore {
     display: none; }
 
@@ -193,10 +195,11 @@ header {
       display: none; }
       .footer_wrap .footer-left .contact .tel-mobile .btn {
         /*@extend button[type='submit'];*/
-        border-radius: 0px; }
+        border-radius: 0px;
+        margin-top: 15px; }
         .footer_wrap .footer-left .contact .tel-mobile .btn-default {
           width: 100%;
-          padding: 15px 0 5px; }
+          padding: 15px 0 10px; }
   .footer_wrap .footer-left .footer-menu .copy-conditions {
     cursor: pointer; }
     .footer_wrap .footer-left .footer-menu .copy-conditions .fa-copyright {
@@ -355,10 +358,9 @@ header {
     background: url("../images/title_header_h4.png") no-repeat left center;
     padding-left: 24px; }
 
-.bodyRealisatie {
+.contentRealisatie .bodyRealisatie {
   padding-bottom: 20px; }
-
-.imgRealisaties {
+.contentRealisatie img {
   padding-bottom: 10px; }
 
 .backto {
@@ -430,7 +432,7 @@ header {
     .mobile.contact-wrap input[type='text'], .mobile.contact-wrap input[type='email'], .mobile.contact-wrap textarea, .mobile.contact-wrap button[type='submit'], .mobile.contact-wrap .footer_wrap .footer-left .contact .tel-mobile .btn, .footer_wrap .footer-left .contact .tel-mobile .mobile.contact-wrap .btn {
       width: 100%; }
 
-  .subdivision .section-content, .footer_wrap .section-content {
+  .subdivision .section-content, .footer_wrap .section-content, .subdivision .section-content-page, .footer_wrap .section-content-page {
     padding: 10px 40px 40px 40px; } }
 @media only screen and (max-width: 900px) {
   /* css code voor tablets in portrait mode */ }
@@ -447,20 +449,22 @@ header {
   header .logo, header .certification {
     text-align: center; }
   header .slogans {
-    margin-top: 30px; }
+    margin-top: 20px; }
   header .certification {
-    padding: 20px 0 20px; }
+    padding: 0 0 20px; }
 
   .subdivision, .footer_wrap {
     margin-top: 35px; }
     .subdivision h1, .footer_wrap h1, .subdivision h2, .footer_wrap h2 {
       padding-left: 53px;
-      margin-left: -55px; }
-    .subdivision .section-content, .footer_wrap .section-content {
+      margin-left: -55px;
+      line-height: 1.5em;
+      padding-bottom: 15px; }
+    .subdivision .section-content, .footer_wrap .section-content, .subdivision .section-content-page, .footer_wrap .section-content-page {
       padding: 10px 20px 20px 20px; }
 
   .footer_wrap .footer-left .contact {
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
     .footer_wrap .footer-left .contact .tel-not-mobile {
       display: none; }
     .footer_wrap .footer-left .contact .tel-mobile {

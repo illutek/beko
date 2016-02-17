@@ -63,19 +63,22 @@
       text-align: center;
     }
     .slogans {
-      margin-top: 30px;
+      margin-top: 20px;
     }
     .certification {
-      padding: 20px 0 20px;
+      padding: 0 0 20px;
     }
   }
 
   //subdivision
   .subdivision {
     margin-top: 35px;
+    //text-align: center;
     h1, h2 {
       padding-left: 53px;
       margin-left: -55px;
+      line-height: 1.5em;
+      padding-bottom: 15px;
     }
     .section-content {
       padding: 10px 20px 20px 20px;
@@ -86,7 +89,7 @@
   .footer_wrap {
     .footer-left {
       .contact {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         .tel-not-mobile {
           display: none;
         }

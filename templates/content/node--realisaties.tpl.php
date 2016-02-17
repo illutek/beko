@@ -91,7 +91,7 @@ else:
     ?>
     <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
         <!-- Title will not be printed here, page.tpl.php does this -->
-        <div class="content">
+        <div class="contentRealisatie">
             <?php
             print '<div class="bodyRealisatie">' .
                 render($content['body']) . '</div>';
