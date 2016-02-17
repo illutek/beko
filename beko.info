@@ -26,3 +26,6 @@ regions[schrijnwerkerij]     = Schrijnwerkerij
 regions[industrie]  = Industrie
 regions[koeltorens] = Koeltorens
 regions[copyconditions] = ModalPopup
+
+;Regions for quicktabs
+regions[subarticleswelcome] = subArticlesWelcome
