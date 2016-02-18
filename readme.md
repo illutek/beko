@@ -13,6 +13,12 @@ Deze worden via een tab systeem onderaan de artcles getoond, na lang overdenken 
 eenvoudige manier via een inhoudstype bv 'subArticle' en dan de juiste tonen via de array plaats.  
 Een simple oplossing, dit omdat we verwachten dat er niet onmiddelijk nood is aan een uitbreiding
 van het aantal subartikelen.
+Bovenstaande niet kunnen uitvoeren, dus gaan we voor de module quicktabs, na het opzetten
+gemerkt dat dit niet lukt als we meerdere quicktabs regions op een onepage willen instellen.
+  
+Voor een minder profesionele oplossing gegaan, één inhoudstype subArticlesQuicktabs  
+(niet geweldig is nog een overblijfsel van het vorige experiment), bij views voor elk subarticle
+een block aangemaakt (paginering 1 item en skip) om het juiste article te tonen.
 
 ###Schrijnwerkerij
 Onder de tekst 2 onderverdelingen Binnen- en buiten schrijnwerkerij, niet in een tabel

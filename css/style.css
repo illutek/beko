@@ -374,24 +374,19 @@ header {
 .backto {
   padding-top: 25px; }
 
-.block-quicktabs {
-  margin-top: 30px; }
+.nav-tabs {
+  border-bottom: 1px solid #87d1fe;
+  margin: 20px 0 20px; }
+  .nav-tabs > li > a:hover {
+    background: transparent; }
+  .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a {
+    border: 1px solid #87d1fe;
+    border-bottom-color: #ffffff; }
 
-.quicktabs-wrapper .quicktabs_main {
-  border: none; }
-.quicktabs-wrapper ul.quicktabs-tabs.quicktabs-style-basic {
-  height: 34px; }
-  .quicktabs-wrapper ul.quicktabs-tabs.quicktabs-style-basic a {
-    font-size: 1.4em !important;
-    font-weight: normal !important; }
-  .quicktabs-wrapper ul.quicktabs-tabs.quicktabs-style-basic li {
-    padding: 15px;
-    border: none; }
-    .quicktabs-wrapper ul.quicktabs-tabs.quicktabs-style-basic li.active {
-      padding: 15px;
-      border: solid 1px #c5c5c5;
-      border-bottom: none; }
-
+@media only screen and (max-width: 479px) {
+  .nav-tabs li > a {
+    font-size: 12px;
+    padding: 5px; } }
 @media (max-width: 991px) {
   .navbar-header {
     float: none; }

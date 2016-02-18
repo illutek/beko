@@ -28,4 +28,8 @@ regions[koeltorens] = Koeltorens
 regions[copyconditions] = ModalPopup
 
 ;Regions for quicktabs
-regions[subarticleswelcome] = subArticlesWelcome
+regions[beleidsverklaring] = Beleidsverklaring
+regions[historiek] = Historiek
+regions[kwaliteitslabels] = Kwaliteitslabels
+regions[attractionvloeren] = Attractionvloeren
+regions[systeemwanden] = Systeemwanden

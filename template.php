@@ -61,7 +61,7 @@ function beko_form_alter(&$form, &$form_state, $form_id)
  */
 function beko_preprocess_node(&$variables)
 {
-    if ($variables['type'] == 'article') {
+    if ($variables['type'] == 'article' || 'subarticlesquicktabs') {
         $node = $variables['node'];
         $variables['nodeEdit'] = '<div class="edit-icon">' . '<a href="' . url('node/' . $node->nid . '/edit') . '">' .
             '<i class="fa fa-pencil-square-o"></i>' . t(' Edit') . '</a>' . '</div>';

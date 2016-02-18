@@ -53,8 +53,35 @@ include 'header.inc.php';
                 <?php print render($page['content']); ?>
 
                 <div class="col-md-12">
-                    <!-- -->
-                    <?php print render($page['subarticleswelcome']); ?>
+                    <!-- oplossing op een niet geweldige manier-->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#beleidsverklaring" aria-controls="beleidsverklaring" role="tab" data-toggle="tab">
+                                Beleidsverklaring
+                            </a>
+                        </li>
+                        <li role="historiek">
+                            <a href="#historiek" aria-controls="historiek" role="tab" data-toggle="tab">
+                                Historiek
+                            </a>
+                        </li>
+                        <li role="kwaliteitslabels">
+                            <a href="#kwaliteitslabels" aria-controls="kwaliteitslabels" role="tab" data-toggle="tab">
+                                Kwaliteitslabels
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="beleidsverklaring">
+                            <?php print render($page['beleidsverklaring']); ?>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in" id="historiek">
+                            <?php print render($page['historiek']); ?>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in" id="kwaliteitslabels">
+                            <?php print render($page['kwaliteitslabels']); ?>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,33 +148,10 @@ include 'header.inc.php';
                 </ul>
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade in active" id="attractionvloeren">
-                        <h4>Attraction vloeren</h4>
-
-                        <p>
-                            BEKO plaatst verschillende vloerafwerkingen voor zowel kantoorruimtes als winkels of
-                            keukens.
-                            Een van de producten waarmee we kunnen werken zijn bijvoorbeeld de Attraction-tegels. Dit
-                            zijn
-                            semi-flexibele vloertegels gemaakt uit pvc: een gerecycleerde onderlaag van 4 mm met een
-                            gekleurde slijtlaag uit pure pvc van 1 mm dik. De tekening wordt verkregen door onder hoge
-                            druk gekleurde granulaten in de gekalanderde meerkleurige slijtlaag te persen.Door de
-                            oppervlaktebehandelng met polyurethaan (PUR) behoeft deze vloer weinig onderhoud. De tegels
-                            koppelen we dankzij de zwaluwstaartverbindingen zonder hecht- of lasmiddelen aan elkaar. De
-                            tegels zijn antistatisch en voldoen aan de eisen voor gebruik in o.a. computerruimtes.
-                            De Attraction® tegels zijn bacteriostatisch en werden schimmelwerend behandeld.
-                        </p>
+                        <?php print render($page['attractionvloeren']); ?>
                     </div>
                     <div role="tabpanel" class="tab-pane fade in" id="systeemwanden">
-                        <h4>Systeemwanden</h4>
-
-                        <p>
-                            BEKO installeert verschillende systeemwanden, van Gyproc tot bijvoorbeeld Trespa.De
-                            Trespa-plaatmaterialen zijn uitzonderlijk op het vlak van hygiëne, makkelijk te reinigen en
-                            kunnen in verschillende designmogelijkheden toegepast worden. Ze zijn bovendien slag- en
-                            stootvast en vochtbestendig. Dankzij deze eigenschappen zijn ze ideaal voor
-                            interieurtoepassingen
-                            in o.a. zorginstellingen, luchthavens, sportcentra, bedrijven, winkels of musea.
-                        </p>
+                        <?php print render($page['systeemwanden']); ?>
                     </div>
                 </div>
             </div>
