@@ -53,35 +53,14 @@ include 'header.inc.php';
                 <?php print render($page['content']); ?>
 
                 <div class="col-md-12">
-                    <!-- oplossing op een niet geweldige manier-->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#beleidsverklaring" aria-controls="beleidsverklaring" role="tab" data-toggle="tab">
-                                Beleidsverklaring
-                            </a>
-                        </li>
-                        <li role="historiek">
-                            <a href="#historiek" aria-controls="historiek" role="tab" data-toggle="tab">
-                                Historiek
-                            </a>
-                        </li>
-                        <li role="kwaliteitslabels">
-                            <a href="#kwaliteitslabels" aria-controls="kwaliteitslabels" role="tab" data-toggle="tab">
-                                Kwaliteitslabels
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade in active" id="beleidsverklaring">
-                            <?php print render($page['beleidsverklaring']); ?>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade in" id="historiek">
-                            <?php print render($page['historiek']); ?>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade in" id="kwaliteitslabels">
-                            <?php print render($page['kwaliteitslabels']); ?>
-                        </div>
-                    </div>
+                    <?php
+                    /**
+                     * Het bootstrap tabs systeem alle uitleg om deze oplossing
+                     * op het readme.md file
+                     * sub-articles betrekking op de welkom tekst
+                     */
+                    include 'subarticles/tabs-subarticle-welkom.inc.php';
+                    ?>
                 </div>
             </div>
         </div>
@@ -133,27 +112,17 @@ include 'header.inc.php';
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
-                <?php print render($page['industrie']); ?>
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#attractionvloeren" aria-controls="attractionvloeren" role="tab" data-toggle="tab">
-                            Attraction vloeren
-                        </a>
-                    </li>
-                    <li role="historiek">
-                        <a href="#systeemwanden" aria-controls="systeemwanden" role="tab" data-toggle="tab">
-                            Systeemwanden
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active" id="attractionvloeren">
-                        <?php print render($page['attractionvloeren']); ?>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade in" id="systeemwanden">
-                        <?php print render($page['systeemwanden']); ?>
-                    </div>
-                </div>
+                <?php
+                print render($page['industrie']);
+                /**
+                 * Het bootstrap tabs systeem alle uitleg om deze oplossing
+                 * op het readme.md file
+                 * sub-articles betrekking op de industrie tekst
+                 */
+                include 'subarticles/tabs-subarticle-industrie.inc.php';
+                ?>
+
+
             </div>
         </div>
     </div>
