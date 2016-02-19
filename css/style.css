@@ -374,6 +374,9 @@ header {
 .backto {
   padding-top: 25px; }
 
+.overzicht-link {
+  margin-top: 25px; }
+
 .nav-tabs {
   border-bottom: 1px solid #87d1fe;
   margin: 20px 0 20px; }

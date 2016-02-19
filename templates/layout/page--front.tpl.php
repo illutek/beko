@@ -173,16 +173,11 @@ include 'header.inc.php';
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
-                <h2>Realisatie</h2>
+                <?php print render($page['realisatie']); ?>
 
-                <p>Enkele van onze realisaties in onze verschillende deeldomeinen (schrijnwerkerij & interieurbouw,
-                    koeltorens,
-                    industrieprojecten...).<br>
-                    Voor referenties mag u steeds telefonisch contact met ons opnemen.</p>
-
-                <p><a href="<?php print base_path() ?>realisaties">
+                <div class="overzicht-link"><a href="<?php print base_path() ?>realisaties">
                         <i class="fa fa-picture-o fa-lg"></i> Overzicht realisaties</a>
-                </p>
+                </div>
             </div>
         </div>
     </div>

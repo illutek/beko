@@ -25,6 +25,7 @@ regions[contactbis] = Contact Mobile
 regions[schrijnwerkerij]     = Schrijnwerkerij
 regions[industrie]  = Industrie
 regions[koeltorens] = Koeltorens
+regions[realisatie] = Realisatie Tekst
 regions[copyconditions] = ModalPopup
 
 ;Regions for quicktabs
