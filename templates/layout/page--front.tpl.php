@@ -70,39 +70,14 @@ include 'header.inc.php';
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
-                <?php print render($page['schrijnwerkerij']); ?>
+                <?php
+                print render($page['schrijnwerkerij']);
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3>Binnenschrijnwerkerij</h3>
-                        <ul>
-                            <li>keukeninrichting</li>
-                            <li>badkamermeubels</li>
-                            <li>binnendeuren</li>
-                            <li>plafonds</li>
-                            <li>lambrisering</li>
-                            <li>vloerbekleding</li>
-                            <li>maatkasten</li>
-                            <li>dressings</li>
-                            <li>trappen</li>
-                            <li>isolatie</li>
-                            <li>systeemwanden</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Buitenschrijnwerkerij</h3>
-                        <ul>
-                            <li>ramen & deuren</li>
-                            <li>daktimmerwerken</li>
-                            <li>skeletbouw</li>
-                            <li>gevelbekleding</li>
-                            <li>veranda's</li>
-                            <li>pergola's</li>
-                            <li>tuinmeubliair</li>
-                            <li>houten vloeren</li>
-                        </ul>
-                    </div>
-                </div>
+                /**
+                 * Sub articles schrijnwerkerij
+                 */
+                include 'subarticles/tabs-subarticle-schrijnwerkerij.inc.php';
+                ?>
             </div>
         </div>
     </div>
@@ -121,8 +96,6 @@ include 'header.inc.php';
                  */
                 include 'subarticles/tabs-subarticle-industrie.inc.php';
                 ?>
-
-
             </div>
         </div>
     </div>
