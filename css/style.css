@@ -87,6 +87,12 @@ a {
     color: #003353;
     text-decoration: none; }
 
+ul {
+  padding-left: 35px; }
+
+li {
+  list-style-type: circle; }
+
 img {
   float: left;
   margin-right: 10px; }
@@ -339,6 +345,8 @@ header {
   color: #87d1fe; }
   .contact-wrap button[type='submit']:hover, .contact-wrap .footer_wrap .footer-left .contact .tel-mobile .btn:hover, .footer_wrap .footer-left .contact .tel-mobile .contact-wrap .btn:hover {
     border: solid 1px #22aafd; }
+.contact-wrap .contactgegevens {
+  color: #ffffff; }
 
 .resizable-textarea .grippie {
   display: none; }
