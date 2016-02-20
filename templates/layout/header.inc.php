@@ -21,8 +21,10 @@
             </div>
 
             <div class="col-md-4 certification">
-                <img src="<?php print $imagepath; ?>/LRQA-2010-vca-petrochemie_white.png" height="100">
-                <img src="<?php print $imagepath; ?>/Bureau-Veritas-Certificaten-VCA-400x186.png" height="70">
+                <img src="<?php print $imagepath; ?>/LRQA-2010-vca-petrochemie_white.png"
+                     height="100" alt="petrochemie logo">
+                <img src="<?php print $imagepath; ?>/Bureau-Veritas-Certificaten-VCA-400x186.png"
+                     height="70" alt="Veritas logo">
             </div>
         </div>
     </div>

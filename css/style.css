@@ -398,6 +398,9 @@ header {
   .nav-tabs li > a {
     font-size: 12px;
     padding: 5px; } }
+.edit-icon a:hover {
+  color: #fe0000; }
+
 @media (max-width: 991px) {
   .navbar-header {
     float: none; }

@@ -8,5 +8,11 @@
 ?>
 <h3 class="slogan-title"><?php print $title; ?></h3>
 <div class="content">
-    <?php print render($content['body']); ?>
+    <?php
+    print render($content['body']);
+    global $user;
+    if ($user->uid != 0) {
+        print $nodeEdit;
+    }
+    ?>
 </div>
