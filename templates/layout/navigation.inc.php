@@ -39,6 +39,7 @@
                     <a href="#" data-id="contact-mobile" class="scroll-link">Contact</a>
                 </li>
             </ul>
+            <?php include 'user-navbar-right.inc.php'; ?>
         </div>
     </div>
 </nav>

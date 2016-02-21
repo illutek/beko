@@ -22,6 +22,7 @@
                     <a href="<?php print $front_page; ?>"><i class="fa fa-home"></i>Home</a>
                 </li>
             </ul>
+            <?php include 'user-navbar-right.inc.php'; ?>
         </div>
     </div>
 </nav>

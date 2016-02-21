@@ -18,7 +18,11 @@ gemerkt dat dit niet lukt als we meerdere quicktabs regions op een onepage wille
   
 Voor een minder profesionele oplossing gegaan, één inhoudstype subArticlesQuicktabs  
 (niet geweldig is nog een overblijfsel van het vorige experiment), bij views voor elk subarticle
-een block aangemaakt (paginering 1 item en skip) om het juiste article te tonen.
+een block aangemaakt (paginering 1 item en skip) om het juiste article te tonen. Het item, skip ook
+niet toegepast de waarde van skip wijzigt na toevoeging van een extra subartikel, geen oplossing
+als in de toekomst de vraag komt om één subartikel toe te voegen, dan maar voor het taxonomiesysteem
+gegaan en in views hier op gefilterd dit tag veld, met de module field permissions, verborgen voor
+de editor.
 
 ###Schrijnwerkerij
 Onder de tekst 2 onderverdelingen Binnen- en buiten schrijnwerkerij, niet in een tabel
