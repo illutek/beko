@@ -21,8 +21,9 @@
   }
   blockquote {
     display: inline-block;
-    background: $VCAred;
-    color: #ffffff;
+    //background: $VCAred;
+    //color: #ffffff;
+    border: solid 1px $VCAred;
     width: 40%;
     margin: 20px;
     float: right;

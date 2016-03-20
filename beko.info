@@ -5,6 +5,7 @@ engine = phptemplate
 
 ;STYLESHEETS
 stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/fontawesome.min.css
 stylesheets[all][] = css/animate.css
 stylesheets[all][] = css/style.css
 

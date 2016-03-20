@@ -50,5 +50,13 @@ Het aanroepen van sticky.js gebeurt nu op template.php onder voorwaarde if (drup
 als ook een weight moeten meegeven om ervoor te zorgen dat deze later (sticky.js) komt dan jquery.min.js
 
 
+####Opmerkingen
+Het oproepen van externe files zoals 'font-awesome.min.css' en 'jquery.min.js' geeft een aantal meldingen bij  
+Google Speedtest dus beide files in het theme opgenomen, fontawesome.min.css wordt op het info bestand opgeroepen en  
+de jquery.min.js op template.php
+
+Als ook de fout met toolbar.js is er niet meer.
+
+
 
 
