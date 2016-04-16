@@ -36,7 +36,13 @@
                 </div>
             </div>
             <div class="col-md-8 footer-right">
-                <img class="img-responsive" src="<?php print $imagepath; ?>/beko_footer_folder.jpg" alt="BEKO bvba folder">
+
+                <?php
+                /**
+                 * Wachten op een eventueel nieuwe folder
+                 * <img class="img-responsive" src="<?php print $imagepath; ?>/beko_footer_folder.jpg" alt="BEKO bvba folder">
+                 */
+                ?>
             </div>
 
         </div>
