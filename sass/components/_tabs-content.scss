@@ -5,14 +5,14 @@
 // de filename van het component
 //============================================
 .nav-tabs {
-  border-bottom: 1px solid $lightblue;
+  border-bottom: 1px solid $greenLight;
   margin: 20px 0 20px;
   &>li>a:hover {
     background: transparent;
   }
   &>li.active>a:focus,
   &>li.active>a {
-    border: 1px solid $lightblue;
+    border: 1px solid $greenLight;
     border-bottom-color: #ffffff;
   }
 }

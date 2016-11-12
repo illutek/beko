@@ -10,10 +10,17 @@ body {
   background: $wood_background-brown;
 }
 
-h1, h2, h3 {
-  padding-left: 43px;
-  background: $heading1to3;
-  margin-left: -25px;
+h1 {
+  padding-left: 53px;
+  background: $heading1;
+  //margin-left: -25px;
+  line-height: 2.5em;
+}
+
+h2, h3 {
+  padding-left: 53px;
+  background: $heading2to3;
+  //margin-left: -25px;
   line-height: 2.5em;
 }
 
@@ -56,9 +63,9 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $greenMain;
   &:hover {
-    color: $darkbleu;
+    color: $brown;
     text-decoration: none;
   }
 }

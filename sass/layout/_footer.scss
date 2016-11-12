@@ -3,10 +3,10 @@
 //===============================
 .footer_wrap {
   @extend .subdivision;
-  background: $darkbleu;
+  background: $brownDark;
   min-height: 150px;
   border: none;
-  color: $lightblue;
+  color: $brownLightest;
   a {
     color: $lightblue;
     &:hover {

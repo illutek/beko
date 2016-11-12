@@ -1,19 +1,45 @@
 //=================================================
 // ## ++ Variabele
 //=================================================
+
+$darkbleu: #003353;
 $blue: #0173b9;
 $lightblue: #87d1fe;
 $midleblue: #22aafd;
-$darkbleu: #003353;
+
 $black: #0e1d25;
 $darkgrey: #103042;
 $redbeko: #fe0000;
 $VCAred: #b72033;
-$borderBottom: solid 2px $redbeko;
+
+
+
 $wood_background-grey: url("../images/background-retina_wood-min.png")repeat fixed;
 $wood_background-brown: url("../images/retina_wood.png")repeat fixed;
-$heading1to3: url("../images/title_header.png") no-repeat left center;
+
+$heading1: url("../images/title_header_more.png") no-repeat left 20px;
+$heading2to3: url("../images/title_header_more.png") no-repeat left 7px;
 $heading4: url("../images/title_header_h4.png") no-repeat left center;
+
+//===================================================
+// ## ++ New Variables on 2016-11-12
+// ==================================================
+
+$greenDarkest: #5f8427;
+$greenDark: #7bab33;
+$greenMain: #95c948;
+$greenLight: #acd56f;
+$greenLightest: #c3e097;
+
+$brownDarkest: #060403;
+$brownDark: #271a15;
+$brown: #493026;
+$brownLight: #6b4637;
+$brownLightest: #8c5c49;
+
+$white: #ffffff;
+
+$borderBottom: solid 2px $brown;
 
 //=================================================
 // ## ++ Placeholders

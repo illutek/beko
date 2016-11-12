@@ -8,10 +8,10 @@
   padding: 35px 0;
   border-bottom: $borderBottom;
   .section-content {
-    background: #ffffff;
+    background: $white;
     overflow: hidden;
     //background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
-    color: #000000;
+    color: $black;
     padding: 10px 110px 40px 40px;
     @include roundcorners(25px);
   }
@@ -23,7 +23,7 @@
     display: inline-block;
     //background: $VCAred;
     //color: #ffffff;
-    border: solid 1px $VCAred;
+    border: solid 1px $brown;
     width: 40%;
     margin: 20px;
     float: right;
@@ -39,9 +39,9 @@
 }
 
 .blue_background {
-  @include bg-gradient-t2b($darkbleu, $blue);
+  @include bg-gradient-t2b($greenDarkest, $greenMain);
 }
 
 .black_background {
-  @include bg-gradient-t2b($darkgrey, $darkbleu);
+  @include bg-gradient-t2b($greenDarkest, $greenDark);
 }

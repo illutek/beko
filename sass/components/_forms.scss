@@ -11,16 +11,16 @@
   display: block;
   opacity: 1;
   h2 {
-    color: #ffffff;
+    color: $white;
     padding-bottom: 25px;
     background: none;
   }
   .sticky {
     position: absolute;
     min-height: 500px;
-    background: $blue;
+    background: $greenMain;
     padding: 10px 25px;
-    border: solid 1px $lightblue;
+    //border: solid 1px $brownLightest;
     margin-top: -50px;
     z-index: 999;
     &.stick {
@@ -34,11 +34,11 @@
   input[type='text'], input[type='email'], textarea {
     width: 100%;
     padding: 5px;
-    background: $midleblue;
-    border: solid 1px $lightblue;
+    background: $greenDarkest;
+    border: solid 1px $greenDarkest;
     margin-bottom: 25px;
     &:focus {
-      border: solid 1px $midleblue;
+      border: solid 1px $greenDarkest;
     }
   }
   input[type='submit'] {
@@ -47,25 +47,26 @@
   button[type='submit'] {
     @extend textarea;
     width: auto;
-    color: $lightblue;
+    color: $greenMain;
     &:hover {
-      border: solid 1px $midleblue;
+      border: solid 1px $greenDarkest;
+    }
+  }
+  .resizable-textarea {
+    .grippie {
+      display: none;
     }
   }
   .contactgegevens {
-    color: #ffffff;
+    color: $white;
   }
 }
 
-.resizable-textarea {
-  .grippie {
-    display: none;
-  }
-}
+
 
 @include placeholder {
   /* mixin placeholder */
-  color: $lightblue;
+  color: $greenMain;
 }
 
 // contact formulier voor mobiele toestellen

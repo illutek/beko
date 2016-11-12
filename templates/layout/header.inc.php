@@ -21,7 +21,7 @@
             </div>
 
             <div class="col-md-4 certification">
-                <img src="<?php print $imagepath; ?>/LRQA-2010-vca-petrochemie_white-min.png"
+                <img src="<?php print $imagepath; ?>/Logo-VCA-Petrochemie.png"
                      height="100" alt="petrochemie logo">
             </div>
         </div>
