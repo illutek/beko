@@ -42,7 +42,7 @@ table {
 
 body {
   margin: 0;
-  color: #0e1d25;
+  color: #493026;
   font-family: Verdana, Geneva, sans-serif;
   line-height: 1.9em;
   background: url("../images/retina_wood.png") repeat fixed; }
@@ -155,11 +155,8 @@ header {
   .subdivision .section-content, .footer_wrap .section-content, .subdivision .section-content-page, .footer_wrap .section-content-page {
     background: #ffffff;
     overflow: hidden;
-    color: #0e1d25;
-    padding: 10px 110px 40px 40px;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px; }
+    color: #493026;
+    padding: 10px 110px 40px 40px; }
   .subdivision .section-content-page, .footer_wrap .section-content-page {
     padding: 10px 30px 40px 40px; }
   .subdivision blockquote, .footer_wrap blockquote {
@@ -317,7 +314,7 @@ header {
   opacity: 1; }
   .nonmobile.contact-wrap h2 {
     color: #ffffff;
-    padding-bottom: 25px;
+    padding: 0 0 25px 0;
     background: none; }
   .nonmobile.contact-wrap .sticky {
     position: absolute;
