@@ -49,6 +49,9 @@ problemen op de page.tpl.php omdat daar geen form getoond wordt en ook de link n
 Het aanroepen van sticky.js gebeurt nu op template.php onder voorwaarde if (drupal_is_front_page()){} 
 als ook een weight moeten meegeven om ervoor te zorgen dat deze later (sticky.js) komt dan jquery.min.js
 
+###Realisaties
+
+
 
 ####Opmerkingen
 Het oproepen van externe files zoals 'font-awesome.min.css' en 'jquery.min.js' geeft een aantal meldingen bij  

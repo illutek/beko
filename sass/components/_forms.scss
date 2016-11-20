@@ -18,15 +18,27 @@
   .sticky {
     position: absolute;
     min-height: 500px;
+    transition: 1.2s;
     background: $greenMain;
     padding: 10px 25px;
-    //border: solid 1px $brownLightest;
     margin-top: -50px;
     z-index: 999;
     &.stick {
-      top: 120px;
       position: fixed;
+      background: rgba(149,201,72, 0.3);
+      animation-name: stick_move;
+      animation-duration: 1.2s;
+      animation-fill-mode: forwards;
     }
+  }
+}
+
+@keyframes stick_move {
+  from {
+    top: 0;
+  }
+  100% {
+    top: 120px;;
   }
 }
 

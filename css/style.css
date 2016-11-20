@@ -150,7 +150,7 @@ header {
 .subdivision, .footer_wrap {
   min-height: 350px;
   margin-top: 70px;
-  padding: 35px 0;
+  padding: 55px 0;
   border-bottom: solid 2px #493026; }
   .subdivision .section-content, .footer_wrap .section-content, .subdivision .section-content-page, .footer_wrap .section-content-page {
     background: #ffffff;
@@ -169,25 +169,25 @@ header {
   .subdivision ul.inline li.node-readmore, .footer_wrap ul.inline li.node-readmore {
     display: none; }
 
-.blue_background {
-  background-color: #5f8427;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5f8427), to(#95c948));
-  background-image: -webkit-linear-gradient(top, #5f8427, #95c948);
-  background-image: -moz-linear-gradient(top, #5f8427, #95c948);
-  background-image: -ms-linear-gradient(top, #5f8427, #95c948);
-  background-image: -o-linear-gradient(top, #5f8427, #95c948);
-  background-image: linear-gradient(top, #5f8427, #95c948);
-  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#5f8427', end-colourStr='#95c948'); }
+.background_oneven {
+  background-color: #c9bd48;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c9bd48), to(#7bab33));
+  background-image: -webkit-linear-gradient(top, #c9bd48, #7bab33);
+  background-image: -moz-linear-gradient(top, #c9bd48, #7bab33);
+  background-image: -ms-linear-gradient(top, #c9bd48, #7bab33);
+  background-image: -o-linear-gradient(top, #c9bd48, #7bab33);
+  background-image: linear-gradient(top, #c9bd48, #7bab33);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#c9bd48', end-colourStr='#7bab33'); }
 
-.black_background {
-  background-color: #5f8427;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5f8427), to(#7bab33));
-  background-image: -webkit-linear-gradient(top, #5f8427, #7bab33);
-  background-image: -moz-linear-gradient(top, #5f8427, #7bab33);
-  background-image: -ms-linear-gradient(top, #5f8427, #7bab33);
-  background-image: -o-linear-gradient(top, #5f8427, #7bab33);
-  background-image: linear-gradient(top, #5f8427, #7bab33);
-  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#5f8427', end-colourStr='#7bab33'); }
+.background_even {
+  background-color: #7bab33;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7bab33), to(#c9bd48));
+  background-image: -webkit-linear-gradient(top, #7bab33, #c9bd48);
+  background-image: -moz-linear-gradient(top, #7bab33, #c9bd48);
+  background-image: -ms-linear-gradient(top, #7bab33, #c9bd48);
+  background-image: -o-linear-gradient(top, #7bab33, #c9bd48);
+  background-image: linear-gradient(top, #7bab33, #c9bd48);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#7bab33', end-colourStr='#c9bd48'); }
 
 .footer_wrap {
   background: #271a15;
@@ -269,9 +269,6 @@ header {
   .modal-container .custom-modal {
     position: absolute;
     top: 20%;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;
     background-color: #ffffff;
     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.4);
     transition: margin 0.2s; }
@@ -293,7 +290,7 @@ header {
     margin-top: -180px; }
 
 .navbar-default {
-  background: #95c948;
+  background: #c9bd48;
   border-color: #c3e097; }
   .navbar-default .navbar-nav > li > a {
     color: #ffffff; }
@@ -319,14 +316,23 @@ header {
   .nonmobile.contact-wrap .sticky {
     position: absolute;
     min-height: 500px;
+    transition: 1.2s;
     background: #95c948;
     padding: 10px 25px;
     margin-top: -50px;
     z-index: 999; }
     .nonmobile.contact-wrap .sticky.stick {
-      top: 120px;
-      position: fixed; }
+      position: fixed;
+      background: rgba(149, 201, 72, 0.3);
+      animation-name: stick_move;
+      animation-duration: 1.2s;
+      animation-fill-mode: forwards; }
 
+@keyframes stick_move {
+  from {
+    top: 0; }
+  100% {
+    top: 120px; } }
 .contact-wrap input[type='text'], .contact-wrap input[type='email'], .contact-wrap textarea, .contact-wrap button[type='submit'], .contact-wrap .footer_wrap .footer-left .contact .tel-mobile .btn, .footer_wrap .footer-left .contact .tel-mobile .contact-wrap .btn {
   width: 100%;
   padding: 5px;
@@ -368,7 +374,8 @@ header {
   padding: 0 10px; }
   .teaserRealisatieWrap h3 {
     background: url("../images/title_header_h4.png") no-repeat left center;
-    padding-left: 24px; }
+    padding-left: 24px;
+    margin-bottom: 15px; }
 
 .contentRealisatie .bodyRealisatie {
   padding-bottom: 20px; }

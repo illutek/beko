@@ -37,7 +37,7 @@ include 'header.inc.php';
 
 <div id="beko"></div>
 <!-- main content -->
-<section class="subdivision blue_background">
+<section class="subdivision background_oneven">
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
@@ -65,8 +65,9 @@ include 'header.inc.php';
             </div>
         </div>
 </section>
+
 <div id="schrijnwerkerij"></div>
-<section class="subdivision black_background">
+<section class="subdivision background_even">
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
@@ -82,8 +83,9 @@ include 'header.inc.php';
         </div>
     </div>
 </section>
+
 <div id="industrie"></div>
-<section class="subdivision blue_background">
+<section class="subdivision background_oneven">
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
@@ -101,7 +103,7 @@ include 'header.inc.php';
     </div>
 </section>
 <div id="koeltorens"></div>
-<section class="subdivision black_background">
+<section class="subdivision background_even">
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
@@ -111,7 +113,7 @@ include 'header.inc.php';
     </div>
 </section>
 <div id="realisaties"></div>
-<section class="subdivision blue_background">
+<section class="subdivision background_oneven">
     <div class="container">
         <div class="row">
             <div class="col-md-9 section-content wow fadeIn" data-wow-duration="3s">
@@ -125,7 +127,7 @@ include 'header.inc.php';
     </div>
 </section>
 <div id="contact-mobile"></div>
-<section class="subdivision black_background mobile contact-wrap">
+<section class="subdivision background_even mobile contact-wrap">
     <div class="container">
         <?php print render($page['contactbis']); ?>
     </div>

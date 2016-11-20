@@ -5,7 +5,7 @@
 .subdivision {
   min-height: 350px;
   margin-top: 70px;
-  padding: 35px 0;
+  padding: 55px 0;
   border-bottom: $borderBottom;
   .section-content {
     background: $white;
@@ -38,10 +38,10 @@
   }
 }
 
-.blue_background {
-  @include bg-gradient-t2b($greenDarkest, $greenMain);
+.background_oneven {
+  @include bg-gradient-t2b($mostardyellow, $greenDark);
 }
 
-.black_background {
-  @include bg-gradient-t2b($greenDarkest, $greenDark);
+.background_even {
+  @include bg-gradient-t2b($greenDark, $mostardyellow);
 }

@@ -15,7 +15,6 @@
   .custom-modal {
     position: absolute;
     top: 20%;
-    @include roundcorners(25px);
     background-color: $white;
     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.4);
     transition: margin 0.2s;
