@@ -13,7 +13,11 @@
     //background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
     color: $brown;
     padding: 10px 110px 40px 40px;
-    //@include roundcorners(25px);
+    .section-content__sub {
+      margin-top: 25px;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   .section-content-page {
     @extend .section-content;
@@ -21,8 +25,6 @@
   }
   blockquote {
     display: inline-block;
-    //background: $VCAred;
-    //color: #ffffff;
     border: solid 1px $brown;
     width: 40%;
     margin: 20px;

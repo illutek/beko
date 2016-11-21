@@ -27,6 +27,8 @@ regions[schrijnwerkerij]     = Schrijnwerkerij
 regions[industrie]  = Industrie
 regions[koeltorens] = Koeltorens
 regions[realisatie] = Realisatie Tekst
+;Volgende een sub-region op de Realisatie Tekst
+regions[realisatie-photo] = Realisaties Fotos
 regions[copyconditions] = ModalPopup
 
 ;Regions for quicktabs

@@ -48,22 +48,21 @@ body {
   background: url("../images/retina_wood.png") repeat fixed; }
 
 h1 {
-  padding-left: 53px;
   background: url("../images/title_header_more.png") no-repeat left 22px;
+  font-size: 2em;
   line-height: 2.5em; }
 
-h2, h3 {
-  padding-left: 53px;
-  background: url("../images/title_header_more.png") no-repeat left 9px;
-  line-height: 2.5em; }
-
-h1 {
-  font-size: 2em; }
+h1, h2, h3 {
+  padding-left: 53px; }
 
 h2 {
+  background: url("../images/title_header_more.png") no-repeat left 8px;
+  line-height: 2.5em;
   font-size: 1.5em; }
 
 h3 {
+  background: url("../images/title_header_more.png") no-repeat left -1px;
+  line-height: 2.5em;
   font-size: 1.17em; }
 
 h4 {
@@ -74,10 +73,6 @@ h5 {
 
 h6 {
   font-size: .75em; }
-
-h3 {
-  margin-left: 0px;
-  padding-left: 35px; }
 
 h4 {
   padding-left: 25px;
@@ -157,6 +152,10 @@ header {
     overflow: hidden;
     color: #493026;
     padding: 10px 110px 40px 40px; }
+    .subdivision .section-content .section-content__sub, .footer_wrap .section-content .section-content__sub, .subdivision .section-content-page .section-content__sub, .footer_wrap .section-content-page .section-content__sub {
+      margin-top: 25px;
+      padding-left: 0;
+      padding-right: 0; }
   .subdivision .section-content-page, .footer_wrap .section-content-page {
     padding: 10px 30px 40px 40px; }
   .subdivision blockquote, .footer_wrap blockquote {
@@ -371,11 +370,14 @@ header {
 .teaserRealisatieWrap {
   display: inline-block;
   float: left;
-  padding: 0 10px; }
+  padding: 0 5px; }
   .teaserRealisatieWrap h3 {
     background: url("../images/title_header_h4.png") no-repeat left center;
     padding-left: 24px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-size: 0.8em; }
+  .teaserRealisatieWrap img {
+    margin-right: 0; }
 
 .contentRealisatie .bodyRealisatie {
   padding-bottom: 20px; }
