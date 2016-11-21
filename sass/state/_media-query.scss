@@ -75,10 +75,15 @@
   //subdivision
   .subdivision {
     margin-top: 35px;
-    //text-align: center;
-    h1, h2 {
+    h1 {
       padding-left: 53px;
-      margin-left: -55px;
+      background: $heading1;
+      line-height: 2em;
+      padding-bottom: 15px;
+    }
+    h2 {
+      padding-left: 53px;
+      background: $heading2to3;
       line-height: 1.5em;
       padding-bottom: 15px;
     }

@@ -12,14 +12,14 @@ body {
 
 h1 {
   padding-left: 53px;
-  background: $heading1;
+  background: $heading1-default;
   //margin-left: -25px;
   line-height: 2.5em;
 }
 
 h2, h3 {
   padding-left: 53px;
-  background: $heading2to3;
+  background: $heading2to3-default;
   //margin-left: -25px;
   line-height: 2.5em;
 }

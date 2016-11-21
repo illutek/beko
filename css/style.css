@@ -49,12 +49,12 @@ body {
 
 h1 {
   padding-left: 53px;
-  background: url("../images/title_header_more.png") no-repeat left 20px;
+  background: url("../images/title_header_more.png") no-repeat left 22px;
   line-height: 2.5em; }
 
 h2, h3 {
   padding-left: 53px;
-  background: url("../images/title_header_more.png") no-repeat left 7px;
+  background: url("../images/title_header_more.png") no-repeat left 9px;
   line-height: 2.5em; }
 
 h1 {
@@ -323,12 +323,12 @@ header {
     z-index: 999; }
     .nonmobile.contact-wrap .sticky.stick {
       position: fixed;
-      background: rgba(149, 201, 72, 0.3);
-      animation-name: stick_move;
+      background: rgba(201, 189, 72, 0.7);
+      animation-name: stick_move_down;
       animation-duration: 1.2s;
       animation-fill-mode: forwards; }
 
-@keyframes stick_move {
+@keyframes stick_move_down {
   from {
     top: 0; }
   100% {
@@ -482,9 +482,14 @@ header {
 
   .subdivision, .footer_wrap {
     margin-top: 35px; }
-    .subdivision h1, .footer_wrap h1, .subdivision h2, .footer_wrap h2 {
+    .subdivision h1, .footer_wrap h1 {
       padding-left: 53px;
-      margin-left: -55px;
+      background: url("../images/title_header_more.png") no-repeat left 14px;
+      line-height: 2em;
+      padding-bottom: 15px; }
+    .subdivision h2, .footer_wrap h2 {
+      padding-left: 53px;
+      background: url("../images/title_header_more.png") no-repeat left -3px;
       line-height: 1.5em;
       padding-bottom: 15px; }
     .subdivision .section-content, .footer_wrap .section-content, .subdivision .section-content-page, .footer_wrap .section-content-page {

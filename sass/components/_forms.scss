@@ -25,20 +25,20 @@
     z-index: 999;
     &.stick {
       position: fixed;
-      background: rgba(149,201,72, 0.3);
-      animation-name: stick_move;
+      background: rgba(201,189,72, 0.7);
+      animation-name: stick_move_down;
       animation-duration: 1.2s;
       animation-fill-mode: forwards;
     }
   }
 }
 
-@keyframes stick_move {
+@keyframes stick_move_down {
   from {
     top: 0;
   }
   100% {
-    top: 120px;;
+    top: 120px;
   }
 }
 

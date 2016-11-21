@@ -15,8 +15,10 @@ $VCAred: #b72033;
 $wood_background-grey: url("../images/background-retina_wood-min.png")repeat fixed;
 $wood_background-brown: url("../images/retina_wood.png")repeat fixed;
 
-$heading1: url("../images/title_header_more.png") no-repeat left 20px;
-$heading2to3: url("../images/title_header_more.png") no-repeat left 7px;
+$heading1-default: url("../images/title_header_more.png") no-repeat left 22px;
+$heading1: url("../images/title_header_more.png") no-repeat left 14px;
+$heading2to3-default: url("../images/title_header_more.png") no-repeat left 9px;
+$heading2to3: url("../images/title_header_more.png") no-repeat left -3px;
 $heading4: url("../images/title_header_h4.png") no-repeat left center;
 
 //===================================================
