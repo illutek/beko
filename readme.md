@@ -53,6 +53,8 @@ als ook een weight moeten meegeven om ervoor te zorgen dat deze later (sticky.js
 De 4 onderdelen onmiddelijk op de page-front tonen zonder tussen pagina zoals nu op 2016-11-21 het geval is.
 TODO Eerste idee is om een sub-block onder te brengen in de Realisatie Tekst block 'Realisaties Fotos'
 
+###Copyright and Algemene voorwaarden
+Modal tonen met js 'custom-modal.js'
 
 ####Opmerkingen
 Het oproepen van externe files zoals 'font-awesome.min.css' en 'jquery.min.js' geeft een aantal meldingen bij  

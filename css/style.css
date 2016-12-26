@@ -212,6 +212,7 @@ header {
           width: 100%;
           padding: 15px 0 10px; }
   .footer_wrap .footer-left .footer-menu .copy-conditions {
+    font-size: 0.7em;
     cursor: pointer; }
     .footer_wrap .footer-left .footer-menu .copy-conditions .fa-copyright {
       padding-right: 5px; }
