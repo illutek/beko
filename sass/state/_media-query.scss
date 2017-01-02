@@ -23,7 +23,7 @@
   .mobile.contact-wrap {
     display: block;
     h2 {
-      color: #ffffff;
+      color: $logo-color;
       padding-bottom: 25px;
     }
     //form items
@@ -53,28 +53,31 @@
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */
 
+  .logo
+    img {
+      width: 85%;
+      height: auto;
+  }
+
   img {
     float: none;
     margin-right: 0;
   }
 
   header {
-    .logo, .certification {
+    min-height: 120px;
+    .logo {
       text-align: center;
     }
-    .slogans {
-      margin-top: 20px;
-      margin-bottom: 5px;
-    }
-    .certification {
-      padding: 0 0 20px;
-      margin: 0;
+    .slogans, .certification {
+      display: none;
     }
   }
 
   //subdivision
   .subdivision {
     margin-top: 35px;
+    background: none;
     h1 {
       padding-left: 53px;
       background: $heading1;
@@ -84,16 +87,29 @@
     h2 {
       padding-left: 53px;
       background: $heading2to3;
+      font-size: 1.2em;
       line-height: 1.5em;
       padding-bottom: 15px;
+    }
+    blockquote {
+      font-size: 0.85em;
     }
     .section-content {
       padding: 10px 20px 20px 20px;
     }
   }
 
+  .background-color_oneven {
+    background-color: $lighter;
+  }
+
+  .background-color_even {
+    background-color: $white;
+  }
+
   // footer
   .footer_wrap {
+    background: $default-color;
     .footer-left {
       .contact {
         margin-bottom: 30px;

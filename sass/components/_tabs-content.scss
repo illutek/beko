@@ -5,21 +5,23 @@
 // de filename van het component
 //============================================
 .nav-tabs {
-  border-bottom: 1px solid $greenLight;
+  border-bottom: 1px solid $default-color;
   margin: 20px 0 20px;
   &>li>a:hover {
     background: transparent;
   }
   &>li.active>a:focus,
   &>li.active>a {
-    border: 1px solid $greenLight;
-    border-bottom-color: #ffffff;
+    border: 1px solid $default-color;
+    border-bottom-color: transparent;
+    //border-bottom-color: $white;
+    background-color: transparent;
   }
 }
 @media only screen and (max-width: 479px) {
   .nav-tabs {
     li > a {
-      font-size: 12px;
+      font-size: 0.75em;
       padding: 5px;
     }
   }

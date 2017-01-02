@@ -2,8 +2,12 @@
 // ## ++ Navigation
 //==================================================
 .navbar-default {
-  background: $mostardyellow;
-  border-color: $greenLightest;
+  background: $default-color;
+  border-color: $logo-color;
+  .navbar-toggle
+    .icon-bar {
+      background-color: $white;
+  }
   .navbar-nav > li > a {
     color: $white;
     &:hover {

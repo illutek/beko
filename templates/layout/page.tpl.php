@@ -19,7 +19,7 @@ include 'header.inc.php';
 
 <div id="beko"></div>
 <!-- main content -->
-<section class="subdivision background_oneven">
+<section class="subdivision background-color_oneven">
     <div class="container">
         <div class="row">
             <div class="col-md-12 section-content-page wow fadeIn" data-wow-duration="3s">
@@ -39,7 +39,7 @@ include 'header.inc.php';
 </section>
 
 <div id="contact-mobile"></div>
-<section class="subdivision background_even mobile contact-wrap">
+<section class="subdivision background-color_even mobile contact-wrap">
     <div class="container">
         <?php print render($page['contactbis']); ?>
     </div>

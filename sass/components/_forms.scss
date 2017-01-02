@@ -19,13 +19,14 @@
     position: absolute;
     min-height: 500px;
     transition: 1.2s;
-    background: $greenMain;
+    border: solid 1px $logo-color;
+    background: $default-color;
     padding: 10px 25px;
     margin-top: -50px;
     z-index: 999;
     &.stick {
       position: fixed;
-      background: rgba(201,189,72, 0.7);
+      background: rgba(135,135,135, 0.7);
       animation-name: stick_move_down;
       animation-duration: 1.2s;
       animation-fill-mode: forwards;
@@ -46,7 +47,8 @@
   input[type='text'], input[type='email'], textarea {
     width: 100%;
     padding: 5px;
-    background: $greenDarkest;
+    background: $darker;
+    color: $white;
     border: solid 1px $greenDarkest;
     margin-bottom: 25px;
     &:focus {
@@ -59,7 +61,7 @@
   button[type='submit'] {
     @extend textarea;
     width: auto;
-    color: $greenMain;
+    color: $default-color;
     &:hover {
       border: solid 1px $greenDarkest;
     }
@@ -78,7 +80,7 @@
 
 @include placeholder {
   /* mixin placeholder */
-  color: $greenMain;
+  color: $default-color;
 }
 
 // contact formulier voor mobiele toestellen

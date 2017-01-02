@@ -3,14 +3,13 @@
 //========================
 
 .subdivision {
-  min-height: 350px;
+  min-height: 600px;
   margin-top: 70px;
   padding: 55px 0;
-  border-bottom: $borderBottom;
+  border-bottom: solid 1px $logo-color;
+  background: url("../images/sections-bcg-eeeeee.png") no-repeat bottom center;
   .section-content {
-    background: $white;
     overflow: hidden;
-    //background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
     color: $brown;
     padding: 10px 110px 40px 40px;
     .section-content__sub {
@@ -40,10 +39,10 @@
   }
 }
 
-.background_oneven {
-  @include bg-gradient-t2b($mostardyellow, $greenDark);
+.background-color_oneven {
+  background-color: $lighter;
 }
 
-.background_even {
-  @include bg-gradient-t2b($greenDark, $mostardyellow);
+.background-color_even {
+  background-color: $white;
 }

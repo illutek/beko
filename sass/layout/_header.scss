@@ -3,9 +3,9 @@
 //====================================
 header {
   min-height: 250px;
-  background: $greenDarkest;
+  background: $darker;
   margin-top: 50px;
-  border-bottom: $borderBottom;
+  border-bottom: $default-color;
   .logo {
     margin-top: 25px;
     min-height: 85px;
@@ -20,7 +20,7 @@ header {
       @extend %heading;
       font-size: 1.5em; //20px/16px
       line-height: 1.5em; //24px/16px
-      color: $brown;
+      color: $logo-color;
       margin-top: 0;
     }
   }
