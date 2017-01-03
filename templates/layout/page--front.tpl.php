@@ -19,9 +19,10 @@ include 'header.inc.php';
 <div id="sticky-anchor"></div>
 <!-- Het sticky contactform -->
 <div class="container nonmobile contact-wrap">
-  <div class="col-md-offset-8">
+  <div class="col-md-offset-8 wrap-sticky">
     <div class="sticky">
       <?php print render($page['contact']); ?>
+      <hr>
       <div class="contactgegevens">
         <p><i class="fa fa-map-marker"></i>
           Jagersweg 15 - 2450 Meerhout
@@ -32,6 +33,7 @@ include 'header.inc.php';
         </p>
       </div>
     </div>
+    <!-- end .sticky-->
   </div>
 </div>
 
