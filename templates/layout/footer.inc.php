@@ -18,12 +18,12 @@
           <p><i class="fa fa-map-marker"></i> Jagersweg 15 2450 Meerhout</p>
 
           <div class="tel-not-mobile">
-            <p><i class="fa fa-phone"></i> Tel. +3214308738</p>
+            <p><i class="fa fa-phone"></i> Tel. +32 14 30 87 38</p>
           </div>
           <div class="tel-mobile">
             <a href="tel:+3214308738">
               <button type="button" class="btn btn-default">
-                <p><i class="fa fa-phone"></i> Tel. +3214308738</p>
+                <p><i class="fa fa-phone"></i> Tel. +32 14 30 87 38</p>
               </button>
             </a>
 

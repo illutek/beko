@@ -7,7 +7,7 @@ body {
   color: $brown;
   font-family: $font-verdana;
   line-height: 1.9em;
-  background: $wood_background-brown;
+  background: $default-color;
 }
 
 h1 {
@@ -38,6 +38,8 @@ h3 {
 
 h4 {
   font-size: 1.12em;
+  padding-left: 25px;
+  background: $heading4;
 }
 
 h5 {
@@ -48,18 +50,9 @@ h6 {
   font-size: .75em;
 }
 
-
-
-h4 {
-  padding-left: 25px;
-  background: $heading4;
-}
-
-p {
-}
-
 a {
-  color: $greenMain;
+  color: $brown;
+  text-decoration: underline;
   &:hover {
     color: $brown;
     text-decoration: none;

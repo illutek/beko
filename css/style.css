@@ -45,7 +45,7 @@ body {
   color: #493026;
   font-family: Verdana, Geneva, sans-serif;
   line-height: 1.9em;
-  background: url("../images/retina_wood.png") repeat fixed; }
+  background: #878787; }
 
 h1 {
   background: url("../images/title_header_more.png") no-repeat left 22px;
@@ -69,7 +69,9 @@ h3 {
   font-size: 1.17em; }
 
 h4 {
-  font-size: 1.12em; }
+  font-size: 1.12em;
+  padding-left: 25px;
+  background: url("../images/title_header_h4.png") no-repeat left center; }
 
 h5 {
   font-size: .83em; }
@@ -77,12 +79,9 @@ h5 {
 h6 {
   font-size: .75em; }
 
-h4 {
-  padding-left: 25px;
-  background: url("../images/title_header_h4.png") no-repeat left center; }
-
 a {
-  color: #95c948; }
+  color: #493026;
+  text-decoration: underline; }
   a:hover {
     color: #493026;
     text-decoration: none; }
@@ -147,7 +146,7 @@ header {
 
 .subdivision {
   min-height: 600px;
-  margin-top: 70px;
+  margin-bottom: 70px;
   padding: 35px 0;
   border-bottom: solid 1px #90c544;
   background: url("../images/sections-bcg-eeeeee.png") no-repeat bottom center; }
@@ -288,7 +287,8 @@ header {
   .icon-bar {
     background-color: #ffffff; }
   .navbar-default .navbar-nav > li > a {
-    color: #ffffff; }
+    color: #ffffff;
+    text-decoration: none; }
     .navbar-default .navbar-nav > li > a:hover {
       color: #493026; }
   .navbar-default .navbar-nav > li.contact-mobile-display {
@@ -392,8 +392,11 @@ header {
 .nav-tabs {
   border-bottom: 1px solid #878787;
   margin: 20px 0 20px; }
-  .nav-tabs > li > a:hover {
-    background: transparent; }
+  .nav-tabs > li > a {
+    color: #493026;
+    text-decoration: none; }
+    .nav-tabs > li > a:hover {
+      background: transparent; }
   .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a {
     border: 1px solid #878787;
     border-bottom-color: transparent;
@@ -486,7 +489,7 @@ header {
       display: none; }
 
   .subdivision {
-    margin-top: 35px;
+    margin-bottom: 35px;
     background: none; }
     .subdivision h1 {
       padding-left: 53px;

@@ -29,7 +29,7 @@ include 'header.inc.php';
         </p>
 
         <p><i class="fa fa-phone"></i>
-          Tel. +32 14308738
+          Tel. +32 14 30 87 38
         </p>
       </div>
     </div>
