@@ -103,7 +103,7 @@ else:
     <?php
     $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
     $anchor = 'data-id="realisaties"';
-    echo "<a href='$url'>" . "<i class='fa fa-chevron-left fa-lg'></i> Terug naar overzicht</a>";
+    echo "<a href='$url#realisaties'>" . "<i class='fa fa-chevron-left fa-lg'></i> Terug naar overzicht</a>";
     ?>
   </div>
 <?php endif; ?>

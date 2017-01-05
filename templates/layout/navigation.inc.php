@@ -19,10 +19,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav with-indicator">
                 <li class="nav-item">
-                    <a href="#" data-id="home" class="scroll-link"><i class="fa fa-home"></i>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" data-id="beko" class="scroll-link">BEKO</a>
+                    <a href="#" data-id="home" class="scroll-link"><i class="fa fa-home"></i> BEKO</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" data-id="schrijnwerkerij" class="scroll-link">Schrijnwerkerij & interieurbouw</a></li>

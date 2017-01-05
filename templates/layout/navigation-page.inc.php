@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav with-indicator">
                 <li class="nav-item">
-                    <a href="<?php print $front_page; ?>"><i class="fa fa-home"></i>Home</a>
+                    <a href="<?php print $front_page; ?>"><i class="fa fa-home"></i> BEKO</a>
                 </li>
             </ul>
             <?php include 'user-navbar-right.inc.php'; ?>
