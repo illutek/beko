@@ -9,7 +9,7 @@
 <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active">
         <a href="#attractionvloeren" aria-controls="attractionvloeren" role="tab" data-toggle="tab">
-            Attraction vloeren
+            Vloerafwerking
         </a>
     </li>
     <li role="historiek">

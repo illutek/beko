@@ -15,5 +15,8 @@
 <h2 class="article-title"><?php print $title; ?></h2>
 
 <div class="content">
-    <?php print render($content); ?>
+    <div class="img-right">
+        <?php print render($content['field_img_subarticle']); ?>
+    </div>
+    <?php print render($content['body']); ?>
 </div>

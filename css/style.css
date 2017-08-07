@@ -59,9 +59,9 @@ h1, h2, h3 {
   padding-left: 53px; }
 
 h2 {
-  background: url("../images/title_header_more.png") no-repeat left 8px;
+  background: url("../images/title_header_more.png") no-repeat left 15px;
   line-height: 2.5em;
-  font-size: 1.5em; }
+  font-size: 1.8em; }
 
 h3 {
   background: url("../images/title_header_more.png") no-repeat left -1px;
@@ -313,7 +313,7 @@ header {
     border: solid 1px #90c544;
     background-color: #878787;
     padding: 10px 25px;
-    margin-top: -50px;
+    margin-top: 15px;
     z-index: 999; }
     .nonmobile.contact-wrap .sticky.stick {
       position: fixed;
@@ -401,6 +401,9 @@ header {
     border: 1px solid #878787;
     border-bottom-color: transparent;
     background-color: transparent; }
+
+.img-right {
+  float: right; }
 
 @media only screen and (max-width: 479px) {
   .nav-tabs li > a {

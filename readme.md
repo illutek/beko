@@ -61,7 +61,9 @@ Het oproepen van externe files zoals 'font-awesome.min.css' en 'jquery.min.js' g
 Google Speedtest dus beide files in het theme opgenomen, fontawesome.min.css wordt op het info bestand opgeroepen en  
 de jquery.min.js op template.php  
 
-Als ook de fout met toolbar.js is er niet meer.
+##### Opmerking
+Onder opmerkingen van mail 2017-08-07 gevraagd om titel op een bepaald 
+tabblad aan te passen, dit zit op de tpl.php files templates/layout/subarticles/
 
 
 
