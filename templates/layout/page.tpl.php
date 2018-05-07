@@ -57,15 +57,7 @@ include 'footer.inc.php';
 <!-- modal om de copyright en Algemene voorwaarden te tonen, deze optie gekozen
 om niet een pagina hieraan te moeten koppelen (weinig tekst)
 bij Drupal 1 inhoudstype aanmaken (teksten-footer) met een view deze alle printen -->
-<div class="modal-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-1 custom-modal">
-                <div class="close-button"><i class="fa fa-times"></i></div>
-                <div class="content-modal">
-                    <?php print render($page['copyconditions']); ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+<?php
+  include 'modal.inc.php';
+?>

@@ -12,12 +12,14 @@
   pointer-events: none;
   transition: opacity 0.2s;
   z-index: 999;
+  
   .custom-modal {
-    position: absolute;
-    top: 20%;
+    @include center(both);
+    width: 90vw;
     background-color: $white;
     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.4);
     transition: margin 0.2s;
+
     .close-button {
       position: absolute;
       left:100%;
