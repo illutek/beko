@@ -44,7 +44,7 @@ function beko_preprocess_page(&$variables)
  */
 function beko_form_alter(&$form, &$form_state, $form_id)
 {
-    if ($form_id == 'webform_client_form_4') {
+    if ($form_id == 'webform_client_form_24') {
         $form['actions']['button']['#prefix'] = '<button type="submit">';
         $form['actions']['button']['#suffix'] = '</button>';
         $form['actions']['button']['#markup'] = '<i class="fa fa-arrow-right"></i> Verzenden';
