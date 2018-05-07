@@ -1,1 +1,4 @@
-/.idea/
+.idea/
+css/
+dist/
+node_modules/
