@@ -19,4 +19,5 @@
         <?php print render($content['field_img_subarticle']); ?>
     </div>
     <?php print render($content['body']); ?>
+    <?php print render($content['field_bijlage']); ?>
 </div>
