@@ -21,7 +21,7 @@
             </div>
 
             <div class="col-md-4 certification">
-                <img src="<?php print $imagepath; ?>/Logo-VCA-Petrochemie.png"
+                <img src="<?php print $imagepath; ?>/VCA-logo.jpg"
                      height="100" alt="petrochemie logo">
             </div>
         </div>
