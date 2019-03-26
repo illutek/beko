@@ -1,4 +1,4 @@
-.idea/
-css/
-dist/
-node_modules/
+.idea/*
+css/*
+dist/*
+node_modules/*
