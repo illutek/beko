@@ -42,7 +42,7 @@ const path = {
         template: 'dist',
         info: 'dist',
         js: 'dist/js/',
-        css: 'dist/css/',
+        style: 'dist/css/',
         img: 'dist/images/',
         fonts: 'dist/fonts/'
     },
@@ -127,9 +127,13 @@ gulp.task('style:dist', function () {
         .pipe(cleancss({compatibility: 'ie9'}))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('css'))
-        .pipe(gulp.dest(path.dist.css));
+        .pipe(gulp.dest(path.dist.style));
 });
 
+gulp.task('img:dist', function () {
+    gulp.src(path.src.img)
+        .pipe(gulp.dest(path.dist.img));
+});
 
 gulp.task('fonts:dist', function() {
     gulp.src(path.src.fonts)
@@ -143,6 +147,7 @@ gulp.task('dist', [
     'info:dist',
     'js:dist',
     'style:dist',
+    'img:dist',
     'fonts:dist'
 ]);
 
