@@ -48,7 +48,6 @@
     background: $darker;
     color: $white;
     border: solid 1px $greenDarkest;
-    margin-bottom: 25px;
     &:focus {
       border: solid 1px $greenDarkest;
     }
@@ -84,4 +83,22 @@
 // contact formulier voor mobiele toestellen
 .mobile.contact-wrap {
   display: none;
+}
+
+.submitted {
+  display: none;
+}
+
+.webform-submit {
+  display: none;
+}
+
+.webform-component {
+  margin-bottom: 10px;;
+}
+
+.form-text {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
 }
